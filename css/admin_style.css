@@ -149,6 +149,7 @@ section{
 }
 
 .header .flex{
+    position: relative;
     height: 100%;
     padding: 1.5rem 2rem;
     display: flex;
@@ -166,6 +167,7 @@ section{
     gap: 2rem;
     padding: 1.5rem 2rem;
     background-color: var(--primary-opacity);
+    border: none;
 }
 
 .header .flex .search-form input{
@@ -173,6 +175,7 @@ section{
     background: none;
     font-size: 2rem;
     color: var(--color-primary);
+    border: none;
 }
 
 .header .flex .search-form button{
@@ -180,6 +183,7 @@ section{
     color: var(--color-primary);
     cursor: pointer;
     background: none;
+    border: none;
 }
 
 .header .flex .search-form button:hover{
@@ -205,22 +209,26 @@ section{
 }
 
 .header .flex .profile{
-    display: none;
-    flex-direction: column;
     align-items: center;
     padding: 2rem;
     background-color: var(--white);
     border-radius: 1rem;
     box-shadow: var(--box-shadow);
-    width: 40rem;
+    width: 30rem;
     text-align: center;
     position: absolute;
-    transform: scale(1);
-    transform-origin: top right
+    top: 6rem;
+    right: 0;
+    transform: scale(0);
+    transform-origin: top right;
+    gap: 1.2rem;
+    z-index: 1000;
 }
 
-.header .flex .profile.active{
-    display: flex;
+
+.header .profile.active{
+    transform: scale(1);
+    transition: 0.2s ease-in-out;
 }
 
 .header .flex .profile img{
@@ -234,10 +242,9 @@ section{
 }
 
 .header .flex .profile h3{
-    font-size: 2rem;
+    font-size: 1.6rem;
     color: var(--black);
-    margin-bottom: 2rem;
-    text-transform: capitalize;
+    margin: 1rem 0 2rem 0;
 }
 
 .header .flex .profile .flex-btn{
