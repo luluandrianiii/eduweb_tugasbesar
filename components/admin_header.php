@@ -20,7 +20,7 @@
         </form>
         <div class="icons">
             <div id="menu-btn" class="bx bx-list-plus"></div>
-            <div id="search-btn" class="bx bx-search-alt-2-plus"></div>
+            <div id="search-btn" class="bx bx-search-alt-2"></div>
             <div id="user-btn" class="bx bxs-user"></div>
             <div class="profile">
                 <?php

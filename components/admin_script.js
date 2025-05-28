@@ -1,5 +1,5 @@
 let body = document.body;
-let profile = document.querySelector('.header .flex .profile');
+let profile = document.querySelector('header .flex .profile');
 let searchForm = document.querySelector('.header .flex .search-form');
 
 document.querySelector('#user-btn').onclick = () =>{
