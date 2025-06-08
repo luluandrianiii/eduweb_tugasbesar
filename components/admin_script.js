@@ -27,3 +27,29 @@ window.onscroll = () =>{
   body.classList.remove('active');
   }
 };
+
+// Counter//
+document.addEventListener("DOMContentLoaded", () => {
+  const counters = document.querySelectorAll(".counter");
+
+  counters.forEach(counter => {
+    const target = +counter.getAttribute("data-target");
+    const boxCounter = counter.closest(".box-counter");
+    const speed = +boxCounter.getAttribute("data-speed");
+
+    let count = 0;
+    const increment = Math.ceil(target / speed);
+
+    const updateCounter = () => {
+      count += increment;
+      if (count < target) {
+        counter.textContent = count;
+        setTimeout(updateCounter, 1);
+      } else {
+        counter.textContent = target;
+      }
+    };
+
+    updateCounter();
+  });
+});
