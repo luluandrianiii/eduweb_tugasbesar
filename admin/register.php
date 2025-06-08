@@ -97,7 +97,7 @@
                         <p>password <span>*</span></p>
                         <input type="password" name="pass" placeholder="enter your password" maxlength="20" required class="box">
                         <p>password <span>*</span></p>
-                        <input type="password" name="cpass" placeholder="confirm your passwod" maxlength="20" required class="box">
+                        <input type="password" name="cpass" placeholder="confirm your password" maxlength="20" required class="box">
                         <p>select picture <span>*</span></p>
                         <input type="file" name="image" accept="image/*" maxlength="20" required class="box">
                 </div>
