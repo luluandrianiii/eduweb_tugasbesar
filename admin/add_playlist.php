@@ -8,11 +8,36 @@
         header('location: login.php');
     }
 
-    if (isset($_POST['submit'])){
-        $id = unique_id();
-        $title = $_POST['title'];
-        $title = htmlspecialchars($title, ENT_QUOTES, 'UTF-8');
-    }
+   if(isset($_COOKIE['tutor_id'])){
+    $tutor_id = $_COOKIE['tutor_id'];
+}else{
+    $tutor_id = '';
+    header('location: login.php');
+}
+
+if (isset($_POST['submit'])){
+    $id = unique_id();
+    $title = $_POST['title'];
+    $title = htmlspecialchars($title, ENT_QUOTES, 'UTF-8');
+    $descriptions = $_POST['descriptions'];
+    $descriptions = htmlspecialchars($descriptions, ENT_QUOTES, 'UTF-8');
+    $status = $_POST['status'];
+    $status = htmlspecialchars($status, ENT_QUOTES, 'UTF-8');
+
+    $image = $_FILES['image']['name'];
+    $image = htmlspecialchars($image, ENT_QUOTES, 'UTF-8');
+    $ext = pathinfo($image, PATHINFO_EXTENSION);
+    $rename = unique_id().'.'.$ext;
+    $image_size = $_FILES['image']['size'];
+    $image_tmp_name = $_FILES['image']['tmp_name'];
+    $image_folder ='../uploaded_files/'.$rename;
+
+    $add_playlist = $conn->prepare("INSERT INTO playlist (id, tutor_id, title, descriptions, thumb, status) VALUES(?,?,?,?,?,?)");
+    $add_playlist->execute([$id, $tutor_id, $title, $descriptions, $rename, $status]);
+    move_uploaded_file($image_tmp_name, $image_folder);
+
+    $message[] = 'playlist terbaru terbuat';
+}
 
 ?>
 <style type="text/css">
@@ -40,9 +65,9 @@
                 <option value="deactive">Non-Aktif</option>
             </select>
             <p>Judul Playlist <span>*</span></p>
-            <input type="text" name="title" maxlength="100" required placeholder="Masukkan Judul Playlist" class="box">
+            <input type="text" name="title" maxlength="150" required placeholder="Masukkan Judul Playlist" class="box">
             <p>Deskripsi Playlist <span>*</span></p>
-            <textarea name="description" class="box" placeholder="Tulis Deskripsi" maxlength="1000" cols="30" rows="10"></textarea>
+            <textarea name="descriptions" class="box" placeholder="Tulis Deskripsi" maxlength="1000" cols="30" rows="10"></textarea>
             <p>Thumbnail Playlist <span>*</span></p>
             <input type="file" name="image" accept="image/*" required class="box">
             <input type="submit" name="submit" value="buat playlist" class="btn">
