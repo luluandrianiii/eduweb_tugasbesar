@@ -60,7 +60,7 @@
             $image_folder = '../uploaded_files/' . $rename;
 
             if ($image_size > 2000000) {
-                $message[] = 'Ukuran image terlalu besar';
+                $message[] = 'Ukuran gambar terlalu besar';
             } else {
                 // Simpan gambar baru
                 if (move_uploaded_file($image_tmp_name, $image_folder)) {
