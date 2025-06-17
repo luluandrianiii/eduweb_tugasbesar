@@ -8,12 +8,7 @@
         header('location: login.php');
     }
 
-   if(isset($_COOKIE['tutor_id'])){
-    $tutor_id = $_COOKIE['tutor_id'];
-}else{
-    $tutor_id = '';
-    header('location: login.php');
-}
+
 
 if (isset($_POST['submit'])){
     $id = unique_id();
