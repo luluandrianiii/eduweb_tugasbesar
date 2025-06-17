@@ -810,7 +810,68 @@ footer .bottom{
     content:'...';
 }
 
+/* view playlist */
 
+.view-playlist .row{
+    display: flex;
+    gap: 2.5rem;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--white);
+    border-radius: .5rem;
+    padding: 4rem 2rem;
+    margin: 3rem 0;
+}
+
+.view-playlist .row .thumb{
+    flex: 1 1 40rem;
+    height: 30rem;
+    position: relative;
+}
+.view-playlist .row .thumb img{
+    height: 100%;
+    width: 100%;
+    border-radius: .5rem;
+    object-fit: cover;
+}
+.view-playlist .row .thumb span{
+    background-color: rgba(0, 0, 0, 0.3);
+    color: #fff;
+    border-radius: .5rem;
+    position: absolute;
+    top: 1rem;
+    left: 1rem;
+    padding: .5rem 1.5rem;
+    font-size: 2rem;
+}
+.view-playlist .row .details{
+    flex: 1 1 40rem;
+}
+.view-playlist .row .details .date{
+    font-size: 1.5rem;
+    margin: 1rem 0;
+}
+.view-playlist .row .details .date i{
+    color: var(--color-primary);
+    margin-right: 1rem;
+}
+.view-playlist .row .details .date span{
+    color:var(--light-color);
+}
+.view-playlist .row .details .title{
+    color: var(--black);
+    font-size: 2rem;
+    padding-bottom: .5rem;
+    text-transform: capitalize;
+}
+.view-playlist .row .details .descriptions{
+    padding: .5rem 0;
+    font-size: 1.7rem;
+    color: var(--light-color);
+    line-height: 2;
+    white-space: pre-line;
+}
 
 
 
