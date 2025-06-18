@@ -60,7 +60,7 @@
          <div class="box">
             <h3>Dapatkan Kontak</h3>
             <p>Phone: 089766453547</p>
-            <p>Email: edu@learn.com</p>
+            <p>Email: jadipintar@idn.com</p>
             <p>Location: DI. Yogyakarta, Indonesia</p>
             <div class="icons">
                 <i class="bx bxl-facebook"></i>

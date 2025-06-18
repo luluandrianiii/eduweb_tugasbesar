@@ -12,7 +12,7 @@
         $get_id = $_GET['get_id'];
     }else{
         $get_id = '';
-        header('location:playlist.php');
+        header('location:contents.php');
     }
 
     //delete plalylist
