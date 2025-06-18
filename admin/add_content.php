@@ -45,8 +45,6 @@ if (isset($_POST['submit'])){
     move_uploaded_file($video_tmp_name, $video_folder);
     $message[] = 'Kursus Baru telah diunggah';
    }
-
-   
 }
 
 ?>

@@ -19,6 +19,7 @@
     --light-color: #a09d9d;
     --light-bg: #eee;
     --border: .1rem solid rgba(0,0,0,.2);
+    --limegreen: rgb(122, 235, 107);
 }
 
 *{
@@ -728,7 +729,7 @@ footer .bottom{
     gap: 1.5rem;
 }
 .playlists .box-container .add,
-.content .add{
+.contents .add{
     position: absolute;
     right: -4%;
     top: 3%;
@@ -741,12 +742,12 @@ footer .bottom{
     background-image: var(--gradient2);
 }
 .playlists .box-container .add i,
-.content .add{
+.contents .add i{
     font-size: 3rem;
     color: #fff;
 }
 .playlists .box-container .add:hover,
-.content .add:hover{
+.contents .add:hover{
     background-image: var(--gradient);
 }
 .playlists .box-container .box{
@@ -917,6 +918,55 @@ footer .bottom{
     height: 20rem;
     border-radius: .5rem;
     margin: .5rem 0;
+}
+
+/* konten section */
+.contents{
+    position: relative;
+}
+.contents .box-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 50rem);
+    align-items: center;
+    justify-content: center;
+    gap: 1.5rem;
+}
+.contents .box-container .box{
+    border-radius: .5rem;
+    background-color: #fff;
+    box-shadow: var(--box-shadow);
+    padding: 2rem;
+    overflow: hidden;
+}
+.contents .box-container .box .thumb{
+    height: 20rem;
+    width: 100%;
+    border-radius: .5rem;
+    object-fit: cover;
+    margin: 1rem 0;
+}
+.contents .box-container .box .flex{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1.5rem;
+    margin-bottom: .5rem;
+}
+.contents .box-container .box .flex i{
+    font-size: 1.5rem;
+    color: var(--main-color);
+    margin-right: 1rem;
+}
+.contents .box-container .box .flex span{
+    font-size: 1.7rem;
+    color: var(--light-color);
+}
+.contents .box-container .box .title{
+    font-size: 2rem;
+    color: var(--black);
+    line-height: 1.5;
+    text-overflow: ellipsis;
+    overflow: hidden;
 }
 
 
