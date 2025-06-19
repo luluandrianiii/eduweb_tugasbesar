@@ -45,9 +45,11 @@
          <div class="details">
             <div class="tutor">
                 <img src="../uploaded_files/<?= $fetch_profile['image']; ?>">
-                <h3><?= $fetch_profile['name']; ?></h3>
-                <span><?= $fetch_profile['profession']; ?></span>
-                <a href="update.php" class="btn">Update Profil</a>
+                <h3><?= $fetch_profile['name']; ?></h3><br>
+                <span><?= $fetch_profile['profession']; ?></span>  
+            </div>
+            <div>
+                <a href="update.php" class="btn">Perbarui Profil</a>
             </div>
             <div class="flex">
                 <div class="box">
