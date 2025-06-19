@@ -27,6 +27,9 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    outline: none;
+    text-decoration: none;
+    border: none;
 }
 
 *::selection{
@@ -81,7 +84,6 @@ section{
     align-items: center;
     justify-content: center;
 }
-
 .message{
     position: sticky;
     top: 0;
@@ -92,7 +94,6 @@ section{
     gap: 1rem;
     justify-content: space-between;
 }
-
 .message.form{
     max-width: 1200px;
     margin: 0 auto;
@@ -100,7 +101,6 @@ section{
     top: 2rem;
     border-radius: .5rem;
 }
-
 .message span{
     font-size: 2rem;
     color: var(--black);
@@ -111,11 +111,9 @@ section{
     cursor: pointer;
     transition: 2s linear;
 }
-
 .message i:hover{
     transform: rotate(90deg);
 }
-
 .empty{
     background-color: var(--primary-opacity);
     border-radius: 5rem;
@@ -125,7 +123,6 @@ section{
     font-size: 2rem;
     color: var(--color-primary);
 }
-
 .heading{
     padding-bottom: 1.8rem;
     border-bottom: var(--border);
@@ -151,7 +148,6 @@ section{
     z-index: 1000;
     box-shadow: 0px 5px 10px 0px #aaa;
 }
-
 .header .flex{
     position: relative;
     height: 100%;
@@ -160,9 +156,6 @@ section{
     align-items: center;
     justify-content: space-between;
 }
-
-
-
 .header .flex .search-form{
     width: 50rem;
     border-radius: .5rem;
@@ -173,7 +166,6 @@ section{
     background-color: var(--primary-opacity);
     border: none;
 }
-
 .header .flex .search-form input{
     width: 100%;
     background: none;
@@ -181,7 +173,6 @@ section{
     color: var(--color-primary);
     border: none;
 }
-
 .header .flex .search-form button{
     font-size: 2rem;
     color: var(--color-primary);
@@ -189,12 +180,9 @@ section{
     background: none;
     border: none;
 }
-
 .header .flex .search-form button:hover{
     color: var(--color-secondary);
 }
-
-
 .header .flex .icons div{
     font-size: 2.5rem;
     color: var(--white);
@@ -207,12 +195,10 @@ section{
     text-align: center;
     margin-left: .5rem;
 }
-
 .header .flex .icons div:hover{
     background-image: var(--gradient);
     color: var(--black);
 }
-
 .header .flex .profile{
     align-items: center;
     padding: 2rem;
@@ -229,13 +215,10 @@ section{
     gap: 1.2rem;
     z-index: 1000;
 }
-
-
 .header .profile.active{
     transform: scale(1);
     transition: 0.2s ease-in-out;
 }
-
 .header .flex .profile img{
     height: 10rem;
     width: 10rem;
@@ -245,21 +228,19 @@ section{
     background-image: var(--gradient);
     margin-bottom: .5rem;
 }
-
 .header .flex .profile h3{
     font-size: 1.6rem;
     color: var(--black);
     margin: 1rem 0 2rem 0;
 }
-
 .header .flex .profile .flex-btn{
     margin-top: 1.5rem;
 }
-
 .header .flex .profile span{
     color: var(--light-color);
     font-size: 1.6rem;
     text-transform: capitalize;
+    line-height: 3;
 }
 
 
@@ -284,14 +265,12 @@ section{
 .side-bar .profile{
     padding: 3rem 2rem;
 }
-
 .side-bar .profile div a{
     background-image: var(--gradient2);
     font-size: 1.6rem;
     margin-bottom: 2rem;
     margin-bottom: 2rem;
 }
-
 .side-bar .profile div a:hover{
     background-image: var(--gradient);
 }
@@ -316,11 +295,9 @@ section{
     margin-bottom: 2rem;
     margin-bottom: 2rem;
 }
-
 body.active {
     transition: padding left 0.3s ease-in-out;
 }
-
 .side-bar .profile .flex-btn{
     margin-top: .5rem;
 }
@@ -361,7 +338,6 @@ body.active {
     padding: 2rem;
     position: relative;
 }
-
 .form-container form{
     box-shadow: var(--box-shadow);
     border-radius: .5rem;
@@ -376,7 +352,6 @@ body.active {
     width: 50%;
     max-width: 600px;
 }
-
 .form-container form h3{
     text-align: center;
     font-size: 2.5rem;
@@ -399,8 +374,6 @@ body.active {
     padding-bottom: 1rem;
     font-size: 2rem;
 }
-
-
 .form-container .link a{
     color: var(--main-color);
 }
@@ -484,7 +457,6 @@ body.active {
     text-align: center;
     line-height: 1.5;
 }
-
 .newsletter span{
     font-size: 1.5rem;
     background-color: #ffffff33;
@@ -599,7 +571,7 @@ footer .bottom{
     border-top: 2px solid #fff;
     padding: 2rem 0;
 }
-footer .bottom{
+footer .bottom a{
     font-size: 1.1rem;
     color: #000;
     text-transform: capitalize;
@@ -1103,21 +1075,47 @@ footer .bottom{
 
 
  /* media screen */
- @media (max-witdh:768px){
+ @media (max-width:991px){
     #search-btn{
         display: inline-block;
     }
     .header .flex .search-form{
         position: absolute;
         top: 99%;
-        width: 100%;
+        width: auto;
         border-top: var(--border);
         border-bottom: var(--border);
         background-color: var(--white);
         clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
-        transition: .2s linear;
+        transition: .3s linear;
     }
     .header .flex .search-form.active{
         clip-path: polygon(0 0, 100% 0, 100% 10%, 0 100%);
+    }
+    .header .navbar{
+        display: block;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        background-color: #fff;
+        border-bottom: var(--border);
+        padding: 1rem 2rem;
+        clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+    }
+    .header .navbar.active{
+        clip-path: polygon(0 0, 100% 0, 100% 10%, 0 100%);
+    }
+    .header .navbar a{
+        display: block;
+        margin: 1.5rem 0;
+        padding: 1rem;
+        background-image: var(--gradient);
+        text-align: center;
+        border-radius: .5rem;
+        color: #fff;
+    }
+    .header .navbar a:hover{
+        background-color: var(--gradient2);
     }
  }

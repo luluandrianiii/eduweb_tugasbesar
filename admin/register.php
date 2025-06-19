@@ -68,13 +68,13 @@
 
     <div class="form-container">
         <form action="" method="post" enctype="multipart/form-data" class="register">
-            <h3>register now</h3>
+            <h3>Daftar sekarang</h3>
 
             <div class="form-flex">
                 <div class="col">
-                    <p>name <span>*</span></p>
-                    <input type="text" name="name" placeholder="enter your name" maxlength="50" required class="box">
-                    <p>profession <span>*</span></p>
+                    <p>nama <span>*</span></p>
+                    <input type="text" name="name" placeholder="masukkan nama Anda" maxlength="50" required class="box">
+                    <p>profesi <span>*</span></p>
                     <select name="profession" required class="box">
                         <option value="" disabled selected>--select your profession--</option>
                         <option value="developer">developer</option>
@@ -91,19 +91,19 @@
                         <option value="software developer">software developer</option>
                     </select>
                     <p>email  <span>*</span></p>
-                    <input type="email" name="email" placeholder="enter your email" maxlength="50" required class="box">
+                    <input type="email" name="email" placeholder="masukkan email Anda" maxlength="50" required class="box">
                 </div>
                 <div class="col">
                         <p>password <span>*</span></p>
-                        <input type="password" name="pass" placeholder="enter your password" maxlength="20" required class="box">
+                        <input type="password" name="pass" placeholder="masukkan password Anda" maxlength="20" required class="box">
                         <p>password <span>*</span></p>
-                        <input type="password" name="cpass" placeholder="confirm your password" maxlength="20" required class="box">
-                        <p>select picture <span>*</span></p>
+                        <input type="password" name="cpass" placeholder="konfirmasi password" maxlength="20" required class="box">
+                        <p>pilih gambar <span>*</span></p>
                         <input type="file" name="image" accept="image/*" maxlength="20" required class="box">
                 </div>
             </div>
-                <p class="link">already have an account ? <a href="login.php">login now</a></p>
-                <input type="submit" name="submit" class="btn" value="register now" >
+                <p class="link">sudah punya akun? <a href="login.php">login sekarang</a></p>
+                <input type="submit" name="submit" class="btn" value="daftar sekarang" >
         </form>
     </div>
 </body>

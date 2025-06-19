@@ -45,7 +45,7 @@
          <div class="details">
             <div class="tutor">
                 <img src="../uploaded_files/<?= $fetch_profile['image']; ?>">
-                <h3><?= $fetch_profile['name']; ?></h3><br>
+                <h3><?= $fetch_profile['name']; ?></h3>
                 <span><?= $fetch_profile['profession']; ?></span>  
             </div>
             <div>
@@ -77,6 +77,6 @@
          
     </section>
     <?php include '../components/footer.php'?>
-    <script src="../components/admin_script.js" defer></script>
+    <script src="../js/admin_script.js" defer></script>
 </body>
 </html>

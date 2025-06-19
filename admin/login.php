@@ -46,14 +46,14 @@
 
     <div class="form-container">
         <form action="" method="post" enctype="multipart/form-data" class="login">
-            <h3>login now</h3>
+            <h3>Masuk sekarang</h3>
             <p>email  <span>*</span></p>
-            <input type="email" name="email" placeholder="enter your email" maxlength="50" required class="box">
+            <input type="email" name="email" placeholder="masukkan email Anda" maxlength="50" required class="box">
             <p>password <span>*</span></p>
-            <input type="password" name="pass" placeholder="enter your password" maxlength="20" required class="box">
+            <input type="password" name="pass" placeholder="masukkan password Anda" maxlength="20" required class="box">
             
-            <p class="link">don't have an account ? <a href="register.php">register now</a></p>
-            <input type="submit" name="submit" class="btn" value="login now" >
+            <p class="link">belum punya akun? <a href="register.php">Daftar</a></p>
+            <input type="submit" name="submit" class="btn" value="masuk sekarang" >
         </form>
     </div>
 </body>

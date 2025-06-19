@@ -105,6 +105,6 @@ if (isset($_POST['submit'])){
         </form>
     </section>
     <?php include '../components/footer.php'?>
-    <script src="../components/admin_script.js" defer></script>
+    <script src="../js/admin_script.js" defer></script>
 </body>
 </html>

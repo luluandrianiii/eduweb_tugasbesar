@@ -4,9 +4,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 </head>
 <body>
-    <div class="newsletter">
+<div class="newsletter">
     <div class="content">
         <span>Dapatkan update terakhir</span>
         <h1>Subscribe Newsletter Kami</h1>
@@ -72,9 +73,9 @@
     </div>
     <div class="bottom">
         <p>Copyright &copy; 2025 Edu Learn. All Rights Reserved</p>
-        <a href="admin/register.php">Jadilah Pengajar</a>
+        <a href="../admin/register.php">Jadilah Pengajar</a>
     </div>
 </footer>
-<script src="..components/admin_script.js"></script>
+<script src="../js/admin_script.js"></script>
 </body>
 </html>

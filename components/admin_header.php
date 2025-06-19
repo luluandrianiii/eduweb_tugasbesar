@@ -22,7 +22,8 @@
             <div id="menu-btn" class="bx bx-list-plus"></div>
             <div id="search-btn" class="bx bx-search-alt-2"></div>
             <div id="user-btn" class="bx bxs-user"></div>
-            <div class="profile">
+        </div>
+        <div class="profile">
                 <?php
                 $select_profile = $conn->prepare("SELECT * FROM tutors WHERE id=?");
                 $select_profile->execute([$tutor_id]);
@@ -34,16 +35,16 @@
                 <span><?= $fetch_profile['profession'];?></span><br>
 
                 <div id="flex-btn">
-                    <a href="profile.php" class="btn">view profile</a>
-                    <a href="../components/admin_logout.php" onclick="return confirm('logout from this website?');" class="btn">logout</a>
+                    <a href="profile.php" class="btn">Lihat Profil</a>
+                    <a href="../components/admin_logout.php" onclick="return confirm('keluar dari website ini ?');" class="btn">keluar</a>
                 </div>
                 <?php
                     }else{
                 ?>
-                 <h3>please login or register</h3>
+                 <h3>Silahkan masuk atau daftar</h3>
                  <div id="flex-btn">
-                    <a href="login.php" class="btn">login</a>
-                     <a href="register.php" class="btn">register</a>
+                    <a href="login.php" class="btn">masuk</a>
+                     <a href="register.php" class="btn">daftar</a>
                 </div>
                 <?php } ?>
             </div>
@@ -63,10 +64,10 @@
             <p><?= $fetch_profile['profession']; ?></p>
             <a href="profile.php" class="btn">Lihat Profile</a>
         <?php }else{ ?>    
-            <h3>login or register</h3>
+            <h3>masuk atau daftar</h3>
             <div id="flex-btn">
-                <a href="login.php" class="btn">login</a>
-                <a href="register.php" class="btn">register</a>
+                <a href="login.php" class="btn">masuk</a>
+                <a href="register.php" class="btn">daftar</a>
             </div>
     <?php } ?>
     </div>
