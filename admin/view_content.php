@@ -156,13 +156,13 @@
                         <img src="../uploaded_files/<?= $fetch_commentor['image'];?>" alt="">
                         <div>
                             <h3><?= $fetch_commentor['name'];?></h3>
-                            <span><?= $fetch_commentor['date'];?></span>
+                            <span><?= $fetch_comment['date'];?></span>
                         </div>
                     </div>
-                    <p class="text"><?= $fetch_comment['comments'];?></p>
+                    <p class="text"><?= $fetch_comment['comment'];?></p>
                     <form method="post" class="flex-btn">
                         <input type="hidden" name="comment_id" value="<?= $fetch_comment['id'];?>">
-                        <button type="submit" name="delete_comment" value="hapus komentar" class="btn" onclick="return confirm('hapus komentar ini');"></button>
+                        <button type="submit" name="delete_comment" value="hapus komentar" class="btn" onclick="return confirm('hapus komentar ini');">Hapus Komentar</button>
                     </form>
                 </div>
                 <?php

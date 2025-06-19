@@ -329,6 +329,7 @@ body.active {
     padding: 2rem;
     margin: .5rem 0;
     font-size: 1.5rem;
+    text-decoration: none
 }
 .side-bar .navbar a i{
     color: var(--main-color);
@@ -338,6 +339,7 @@ body.active {
 .side-bar .navbar a span{
     color: var(--light-color);
     text-transform: capitalize;
+    ;
 }
 .side-bar .navbar a:hover{
     background-image: var(--gradient2);

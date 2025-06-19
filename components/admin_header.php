@@ -61,9 +61,9 @@
             <img src="../uploaded_files/<?= $fetch_profile['image']; ?>">
             <h3><?= $fetch_profile['name']; ?></h3>
             <p><?= $fetch_profile['profession']; ?></p>
-            <a href="profile.php" class="btn">view profile</a>
+            <a href="profile.php" class="btn">Lihat Profile</a>
         <?php }else{ ?>    
-            <h3>please login or register</h3>
+            <h3>login or register</h3>
             <div id="flex-btn">
                 <a href="login.php" class="btn">login</a>
                 <a href="register.php" class="btn">register</a>
@@ -74,15 +74,16 @@
 
     <nav class="navbar">
         <a href="dashboard.php">
-            <i class="bx bxs-home-heart"></i><span>home</span></a>
+            <i class="bx bxs-home-heart"></i><span>beranda</span></a>
         <a href="playlist.php">
             <i class="bx bxs-receipt"></i><span>playlist</span></a>
         <a href="contents.php">
-            <i class="bx bxs-graduation"></i><span>contents</span></a>
-        <a href="comments.php"><i class="bx bxs-home-heart">
+            <i class="bx bxs-graduation"></i><span>Konten</span></a>
+        <a href="comments.php">
+            <i class="bx bxs-chat"></i><span>Komentar</span></a>
 
-        </i><span>home</span></a>
-        <a href="../components/admin_logout.php" onclick="return confirm('logout from this website?');">
-            <i class="bx bx-log-in-circle"></i><span>logout</span></a>
+        <a href="../components/admin_logout.php" onclick="return confirm('keluar dari situs website ini?');">
+            <i class="bx bx-log-in-circle"></i><span>logout</span>
+        </a>
     </nav>
 </div>
