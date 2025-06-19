@@ -15,45 +15,104 @@
         header('location:dashboard.php');
     }
 
+    if (isset($_POST['update'])) {
+        $video_id = $_POST['video_id'];
+        $video_id = htmlspecialchars($video_id, ENT_QUOTES, 'UTF-8');
 
+        $status = isset($_POST['status']) ? htmlspecialchars($_POST['status'], ENT_QUOTES, 'UTF-8') : 'default_status';
 
-if (isset($_POST['submit'])){
-    $id = unique_id();
-    $title = $_POST['title'];
-    $title = htmlspecialchars($title, ENT_QUOTES, 'UTF-8');
-    $descriptions = $_POST['descriptions'];
-    $descriptions = htmlspecialchars($descriptions, ENT_QUOTES, 'UTF-8');
-    $status = $_POST['status'];
-    $status = htmlspecialchars($status, ENT_QUOTES, 'UTF-8');
-    $playlist = $_POST['playlist'];
-    $playlist = htmlspecialchars($playlist, ENT_QUOTES, 'UTF-8');
+        $title = $_POST['title'];
+        $title = htmlspecialchars($title, ENT_QUOTES, 'UTF-8');
 
-    $image = $_FILES['image']['name'];
-    $image = htmlspecialchars($image, ENT_QUOTES, 'UTF-8');
-    $ext = pathinfo($image, PATHINFO_EXTENSION);
-    $rename = unique_id().'.'.$ext;
-    $image_size = $_FILES['image']['size'];
-    $image_tmp_name = $_FILES['image']['tmp_name'];
-    $image_folder ='../uploaded_files/'.$rename;
+        $descriptions = $_POST['descriptions'];
+        $descriptions = htmlspecialchars($descriptions, ENT_QUOTES, 'UTF-8');
 
-    $video = $_FILES['video']['name'];
-    $video = htmlspecialchars($video, ENT_QUOTES, 'UTF-8');
-    $video_ext = pathinfo($video, PATHINFO_EXTENSION);
-    $rename_video = unique_id().'.'.$video_ext;
-    $video_tmp_name = $_FILES['video']['tmp_name'];
-    $video_folder = '../uploaded_files/'.$rename_video;
+        $playlist = $_POST['playlist'];
+        $playlist = htmlspecialchars($playlist, ENT_QUOTES, 'UTF-8');
 
-   if($image_size > 2000000){
-    $message[] = 'Ukuran gambar terlalu besar';
-   }else{
-    $add_playlist = $conn->prepare("INSERT INTO content (id, tutor_id, playlist_id, title, descriptions, video, thumb, status) VALUES (?,?,?,?,?,?,?,?)");
-    $add_playlist->execute(([$id, $tutor_id, $playlist, $title, $descriptions, $rename_video, $rename, $status]));
-    move_uploaded_file($image_tmp_name, $image_folder);
-    move_uploaded_file($video_tmp_name, $video_folder);
-    $message[] = 'Kursus Baru telah diunggah';
-   }
-}
+        $update_content = $conn->prepare("UPDATE content SET title = ?, descriptions = ?, status = ? WHERE id = ?");
+        $update_content->execute([$title, $descriptions, $status, $get_id]);
 
+        if (!empty($playlist)) {
+            $update_playlist = $conn->prepare("UPDATE content SET playlist_id = ? WHERE id = ?");
+            $update_playlist->execute([$playlist, $video_id]);
+        }
+
+        //update thumbnail video
+        $old_thumb = $_POST['old_thumb'];
+        $old_thumb = htmlspecialchars($old_thumb, ENT_QUOTES, 'UTF-8');
+
+        $image = $_FILES['image']['name'];
+        $image = htmlspecialchars($image, ENT_QUOTES, 'UTF-8');
+        $image_ext = pathinfo($image, PATHINFO_EXTENSION);
+        $rename_image = unique_id().'.'.$image_ext;
+        $image_size = $_FILES['image']['size'];
+        $image_tmp_name = $_FILES['image']['tmp_name'];
+        $image_folder = '../uploaded_files/'.$rename_image;
+
+        if(!empty($image)){
+            if($image_size > 2000000){
+                $message[] = 'Ukuran gambar terlalu besar';
+            }else{
+                $update_thumb = $conn->prepare("UPDATE content SET thumb = ? WHERE id = ?");
+                $update_thumb->execute([$rename_image, $video_id]);
+                move_uploaded_file($image_tmp_name, $image_folder);
+
+                if ($old_thumb != '' AND $old_thumb != $rename_image){
+                    unlink('../uploaded_files/'.$old_thumb);
+                }
+            }
+        }
+
+       //update video
+
+        $old_video = $_POST['old_video'];
+        $old_video = htmlspecialchars($old_video, ENT_QUOTES, 'UTF-8');
+
+        $video = $_FILES['video']['name'];
+        $video = htmlspecialchars($video, ENT_QUOTES, 'UTF-8');
+        $video_ext = pathinfo($video, PATHINFO_EXTENSION);
+        $rename_video = unique_id().'.'.$video_ext;
+        $video_tmp_name = $_FILES['video']['tmp_name'];
+        $video_folder = '../uploaded_files/'.$rename_video;
+
+        if(!empty($video)){
+            $update_video = $conn->prepare("UPDATE content SET video = ? WHERE id = ?");
+            $update_video->execute([$rename_video, $video_id]);
+            move_uploaded_file($video_tmp_name, $video_folder);
+
+            if ($old_video != '' AND $old_video != $rename_video) {
+                unlink('../uploaded_files/'.$old_video);
+            }
+        }
+        $message[] = 'konten diperbarui';
+    }
+
+    //hapus video dari playlist
+        if (isset($_POST['delete_video'])) {
+            $delete_id = $_POST['video_id'];
+            $delete_id = htmlspecialchars($delete_id, ENT_QUOTES, 'UTF-8');
+
+            $delete_video_thumb = $conn->prepare("SELECT * FROM content WHERE id = ? LIMIT 1");
+            $delete_video_thumb->execute([$delete_id]);
+            $fetch_thumb = $delete_video_thumb->fetch(PDO::FETCH_ASSOC);
+            unlink('../uploaded_files/'.$fetch_thumb['thumb']);
+
+            $delete_video = $conn->prepare("SELECT * FROM content WHERE id = ? LIMIT 1");
+            $delete_video->execute([$delete_id]);
+            $fetch_video = $delete_video->fetch(PDO::FETCH_ASSOC);
+            unlink('../uploaded_files/'.$fetch_video['video']);
+
+            $delete_likes= $conn->prepare("SELECT * FROM likes WHERE content_id = ?");
+            $delete_likes->execute([$delete_id]);
+
+            $delete_comments= $conn->prepare("SELECT * FROM comments WHERE content_id = ?");
+            $delete_comments->execute([$delete_id]);
+
+            $delete_content= $conn->prepare("DELETE FROM content WHERE id = ?");
+            $delete_content->execute([$delete_id]);
+            header('location:contents.php');
+        }
 ?>
 <style type="text/css">
     <?php include '../css/admin_style.css'; ?>
@@ -82,16 +141,16 @@ if (isset($_POST['submit'])){
         ?>
         <form action="" method ="post" enctype="multipart/form-data">
             <input type="hidden" name="video_id" value="<?= $fetch_video['id'];?>">
-            <input type="hidden" name="olde_thumb" value="<?= $fetch_video['thumb'];?>">
+            <input type="hidden" name="old_thumb" value="<?= $fetch_video['thumb'];?>">
             <input type="hidden" name="old_video" value="<?= $fetch_video['video'];?>">
             <p>Perbarui Status <span>*</span></p>
             <select name="status" class="box">
                 <option value="<?= $fetch_video['status'];?>" selected><?= $fetch_video['status'];?></option>
-                <option value="active">Aktif</option>
-                <option value="deactive">Non-Aktif</option>
+                <option value="active">Active</option>
+                <option value="deactive">Non-Active</option>
             </select>
             <p>Perbarui Judul<span>*</span></p>
-            <input type="text" name="title" maxlength="150" required placeholder="Masukkan Judul Video" value= "<?= $fetch_video['title'];?>"class="box">
+            <input type="text" name="title" maxlength="150"  placeholder="Masukkan Judul Video" value= "<?= $fetch_video['title'];?>"class="box">
             <p>Perbarui Deskripsi<span>*</span></p>
             <textarea name="descriptions" class="box" placeholder="Tulis Deskripsi" maxlength="1000" cols="30" rows="10"><?= $fetch_video['descriptions'];?></textarea>
             <p>Perbarui Playlist <span>*</span></p>
@@ -117,14 +176,14 @@ if (isset($_POST['submit'])){
             </select>
             <img src="../uploaded_files/<?= $fetch_video['thumb'];?>" alt="">
             <p>Perbarui Thumbnail<span>*</span></p>
-            <input type="file" name="image" accept="image/*" required class="box">
+            <input type="file" name="image" accept="image/*" class="box">
             <video src="../uploaded_files/<?= $fetch_video['video'];?>" controls ></video>
             <p>Perbarui Video<span>*</span></p>
-            <input type="file" name="video" accept="video/*" required class="box">
+            <input type="file" name="video" accept="video/*" class="box">
             <div class="flex-btn">
-                <input type="submit" name="submit" value="Unggah Video" class="btn">
+                <input type="submit" name="update" value="Perbarui Video" class="btn">
                 <a href="view_content.php?get_id=<?= $video_id;?>" class="btn">Lihat Konten</a>
-                <input type="submit" value="Hapus Video" name="delete_video" class="btn">
+                <input type="submit" value="Hapus Konten" name="delete_video" class="btn">
             </div>
         </form>
         <?php

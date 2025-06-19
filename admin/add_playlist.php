@@ -56,8 +56,8 @@ if (isset($_POST['submit'])){
             <p>Playlist Status <span>*</span></p>
             <select name="status" class="box">
                 <option value="" selected disabled>--Pilih Status</option>
-                <option value="active">Aktif</option>
-                <option value="deactive">Non-Aktif</option>
+                <option value="active">Active</option>
+                <option value="deactive">Non-Active</option>
             </select>
             <p>Judul Playlist <span>*</span></p>
             <input type="text" name="title" maxlength="150" required placeholder="Masukkan Judul Playlist" class="box">

@@ -25,7 +25,8 @@
         $descriptions = htmlspecialchars($descriptions, ENT_QUOTES, 'UTF-8');
 
        
-        $status = isset($_POST['status']) ? htmlspecialchars($_POST['status'], ENT_QUOTES, 'UTF-8') : 'default_status';
+        $status = $_POST['status'];
+        $status = htmlspecialchars($status, ENT_QUOTES, 'UTF-8');
 
         $update_playlist = $conn->prepare("UPDATE playlist SET title = ?, descriptions = ?, status = ? WHERE id = ?");
         $update_playlist->execute([$title, $descriptions, $status, $get_id]);
@@ -108,8 +109,8 @@
                 <p>Playlist Status <span>*</span></p>
                 <select name="status" class="box">
                     <option value="<?= $fetch_playlist['status']; ?>" selected disabled><?= $fetch_playlist['status']; ?></option>
-                    <option value="active">Aktif</option>
-                    <option value="deactive">Non-Aktif</option>
+                    <option value="active">Active</option>
+                    <option value="deactive">Non-Active</option>
                 </select>
                 <p>Judul Playlist <span>*</span></p>
                 <input type="text" name="title" maxlength="150" placeholder="Masukkan Judul Playlist" value="<?= $fetch_playlist['title']; ?>" class="box">
