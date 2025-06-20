@@ -13,19 +13,14 @@
 ?>
 <header class="header">
     <section class="flex">
-        <a href="home.php"> <img src="../image/logo.jpg" width="130px"> </a>
+        <a href="home.php"> 
+            <img src="image/logo.jpg" width="130px"> </a>
         <nav class="navbar">
-            <a href="home.php">
-                <i class="bx bxs-home-heart"></i><span>Beranda</span></a>
-            <a href="about.php">
-                <i class="bx bxs-receipt"></i><span>Tentang Kami</span></a>
-            <a href="courses.php">
-                <i class="bx bxs-graduation"></i><span>Kursus</span></a>
-            <a href="teachers.php">
-                <i class="bx bxs-chat"></i><span>Tutor</span></a>
-            <a href="contact.php">
-                <i class="bx bx-log-in-circle"></i><span>Kontak Kami</span>
-            </a>
+            <a href="home.php"><span>Beranda</span></a>
+            <a href="about.php"><span>Tentang Kami</span></a>
+            <a href="courses.php"><span>Kursus</span></a>
+            <a href="teachers.php"><span>Tutor</span></a>
+            <a href="contact.php"><span>Kontak Kami</span></a>
         </nav>
         <form action="search_course.php" method="post" class="search-form">
             <input type="text" name="search_course" placeholder="cari kursus..." required maxlength="100">
@@ -43,7 +38,7 @@
                 if($select_profile->rowCount() > 0){
                     $fetch_profile = $select_profile->fetch(PDO::FETCH_ASSOC);
                 ?>
-                <img src="../uploaded_files/<?= $fetch_profile['image']; ?>" alt="Profile Image">
+                <img src="uploaded_files/<?= $fetch_profile['image']; ?>" alt="Profile Image">
                 <h3><?= $fetch_profile['name']; ?></h3>
                 <span>pelajar</span><br>
 

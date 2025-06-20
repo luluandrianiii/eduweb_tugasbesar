@@ -1,4 +1,6 @@
 <?php
+    
+
     include '../components/connect.php';
 
     if(isset($_COOKIE['tutor_id'])){

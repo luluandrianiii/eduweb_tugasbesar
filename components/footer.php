@@ -1,4 +1,6 @@
 
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -16,7 +18,6 @@
             <input type="email" name="" placeholder="Masukkan Email Anda">
             <button class="btn">Subscribe</button>
         </div>
-        <p>Tidak ada Iklan, Tidak ada ancaman, Tidak ada Komitmen</p>
         <div class="box-container">
             <div class="box">
                 <div class="box-counter" data-speed="1000">
@@ -41,7 +42,7 @@
 <footer>
     <div class="content">
         <div class="box">
-            <img src="../image/logo.jpg">
+            <img src="/jadipintar/image/logo.jpg">
             <a href="contact.php" class="btn">Kontak Kami</a>
         </div>
         <div class="box">

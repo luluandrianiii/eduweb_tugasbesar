@@ -4,7 +4,7 @@
     if (isset($_COOKIE['user_id'])) {
         $user_id = $_COOKIE['user_id'];
     }else{
-        $user_i = '';
+        $user_id = '';
     }
 ?>
 
@@ -21,11 +21,27 @@
     <title>Jadi Pintar - beranda</title>
 </head>
 <body>
-
-
-
     <?php include 'components/user_header.php'?>
+
+    <!----------home section------------- -->
+    <div class="hero">
+        <div class="box-container">
+            <div class="box">
+                <img src="image/demonslayer.jpg">
+            </div>
+            <div class="box">
+                <h1>Bangun skill untuk tingkatkan karirmu</h1>
+                <p>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi sequi fugiat accusantium reprehenderit facere fugit ipsa atque quos voluptatem quas adipisci, minima enim explicabo illo! Reiciendis illo distinctio inventore rem?
+                    </p>
+                </p>
+            </div>
+        </div>
+    </div>
+
+
     <?php include 'components/footer.php'?>
-    <script src="../js/user_script.js" defer></script>
+    <script src="js/user_script.js" defer></script>
 </body>
 </html>
