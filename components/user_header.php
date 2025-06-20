@@ -40,7 +40,7 @@
                 ?>
                 <img src="uploaded_files/<?= $fetch_profile['image']; ?>" alt="Profile Image">
                 <h3><?= $fetch_profile['name']; ?></h3>
-                <span>pelajar</span><br>
+                <span>peserta didik</span><br>
 
                 <div id="flex-btn">
                     <a href="profile.php" class="btn">Lihat Profil</a>

@@ -398,6 +398,113 @@ section{
     text-transform: capitalize;
     color: var(--color-primary);
 }
+.icon-section{
+    position: relative;
+    background-image: linear-gradient(270deg, #9e77ff 0%, #4460ff 100%);
+    padding: 4% 10%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(17rem, 1fr));
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+.icon-section .box{
+    padding: 2rem;
+    border-radius: .5rem;
+    background-color: #ffffff21;
+    box-shadow: var(--box-shadow);
+    margin: 1rem;
+    cursor: pointer;
+    transition: .5s;
+    line-height: 1.5;
+    color: #fff;
+}
+.icon-section .box:hover{
+    background-color: #273041;
+    transform: translateY(-10px);
+}
+.icon-section .box h3{
+    text-transform: capitalize;
+    font-size: 1.5rem;
+}
+.icon-section .box img{
+    width: 90px;
+}
+.courses{
+    padding: 4rem 10%;
+}
+.courses .box-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(35rem, 1fr));
+    gap: 1.5rem;
+    align-items: flex-start;
+    justify-content: center;
+    margin-top: 6rem;
+}
+.courses .box-container .box{
+    border-radius: .5rem;
+    background-color: var(--white);
+    padding: 2rem;
+    position: relative;
+    box-shadow: var(--box-shadow);
+    margin-bottom: 6rem;
+}
+.courses .box-container .box .tutor{
+    margin-bottom: 2rem;
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    background-color: var(--primary-opacity);
+    padding: 1rem;
+    margin-top: -6rem;
+    border-radius: 5px;
+}
+.courses .box-container .box .tutor img{
+    width: 5rem;
+    height: 5rem;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: .5rem;
+}
+.courses .box-container .box .tutor h3{
+    font-size: 1.5rem;
+    color: var(--black);
+    margin-bottom: .2rem;
+    text-transform: capitalize;
+}
+.courses .box-container .box .tutor  span{
+    font-size: 1rem;
+    color: var(--light-color);
+}
+.courses .box-container .box .thumb{
+    width: 100%;
+    border-radius: .5rem;
+    height: 20rem;
+    object-fit: cover;
+    margin-bottom: .3rem;
+}
+.courses .box-container .box .title{
+    font-size: 1.5rem;
+    color: var(--black);
+    margin-top: .5rem;
+    padding: .5rem 0;
+    margin-bottom: 1rem;
+    text-transform: capitalize;
+}
+.courses .btn{
+    margin: 1rem auto;
+}
+
+.courses .heading h1{
+    text-transform: capitalize;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+.courses .more-btn{
+    margin-top: 2rem;
+    text-align: center;
+}
 
 
 
