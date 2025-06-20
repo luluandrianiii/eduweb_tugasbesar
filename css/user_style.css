@@ -124,15 +124,21 @@ section{
     color: var(--color-primary);
 }
 .heading{
-    padding-bottom: 1.8rem;
-    border-bottom: var(--border);
-    font-size: 2.5rem;
-    color: var(--black);
-    text-transform: capitalize;
-    margin-block: 2rem;
-    text-align: center;
-
+    text-align: center
 }
+.heading span{
+    background-color: var(--primary-opacity);
+    color: var(--color-primary);
+    padding: .3rem 1.5rem;
+    text-transform: uppercase;
+    border-radius: 5px;
+    font-size: 1.7rem;
+}
+.heading h1{
+    font-size: 2.5rem;
+    margin: 1rem 0;
+}
+
 .learners .box-container .box::before,
 .courses .box-container .box::before,
 .address_detail .box::before,
@@ -308,6 +314,90 @@ section{
     color: var(--color-secondary);
 }
 
+/* -------------home section------------- */
+.hero{
+    background-image: url('../image/Rosa.jpeg');
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    padding: 6% 10%;
+    position: relative;
+}
+.hero::before{
+   position: relative;
+    content: '';
+    bottom: -1px;
+    left: 0;
+    background-image: url('../image/putih.jpeg');
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 145px;
+    z-index: 1;
+}
+.hero .box-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(40rem, 1fr));
+    justify-content: center;
+    align-items: center;
+    gap:2rem;
+}
+.hero .box-container img{
+    width: 100%;
+}
+.hero .box h1{
+    text-transform: capitalize;
+    font-size: 3.5rem;
+}
+.hero .box p{
+    color: #666;
+    line-height: 1.5;
+    margin: 1rem 0;
+    margin-bottom: 3rem; 
+    font-size: 1.8rem;
+}
+.categories{
+    padding: 4% 10%;
+}
+.categories .heading h1{
+    text-transform: capitalize;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+.categories .box-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+    align-items: center;
+    justify-content: center;
+}
+.categories .box-container .box{
+    padding: 2rem;
+    border-radius: .5rem;
+    background-color: var(--white);
+    margin: 1rem;
+    text-align: center;
+    cursor: pointer;
+    transition: .5s;
+    box-shadow: var(--box-shadow);
+}
+.categories .box-container .box:hover{
+    transform: translateY(-10px);
+}
+.categories .box-container .box h3{
+    text-transform: capitalize;
+    color: var(--color-violet);
+    margin-top: 1rem;
+    margin-bottom: 0 1rem;
+    font-size: 1.5rem;
+}
+.categories .box-container .box img{
+    width: 120px;
+}
+.categories .box-container .box a{
+    font-size: 1.5rem;
+    text-transform: capitalize;
+    color: var(--color-primary);
+}
 
 
 
