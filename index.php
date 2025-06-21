@@ -60,32 +60,32 @@
                 <a href="courses.php">5 kursus <i class="bx bx-right-arrow-alt"></i></a>
             </div>
             <div class="box">
-                <img src="/jadipintar/image/web-design.png">
+                <img src="/jadipintar/image/feature-selection.png">
                 <h3>web design</h3>
                 <a href="courses.php">5 kursus <i class="bx bx-right-arrow-alt"></i></a>
             </div>
             <div class="box">
-                <img src="/jadipintar/image/profit-up.png">
+                <img src="/jadipintar/image/seo.png">
                 <h3>sales marketing</h3>
                 <a href="courses.php">5 kursus <i class="bx bx-right-arrow-alt"></i></a>
             </div>
             <div class="box">
-                <img src="/jadipintar/image/user-interface.png">
+                <img src="/jadipintar/image/app-development2.png">
                 <h3>mobile aplication</h3>
                 <a href="courses.php">5 kursus <i class="bx bx-right-arrow-alt"></i></a>
             </div>
             <div class="box">
-                <img src="/jadipintar/image/personal-development.png">
+                <img src="/jadipintar/image/cognitive.png">
                 <h3>personal development</h3>
                 <a href="courses.php">3 kursus <i class="bx bx-right-arrow-alt"></i></a>
             </div>
             <div class="box">
-                <img src="/jadipintar/image/palette.png">
+                <img src="/jadipintar/image/writing.png">
                 <h3>art & humanities</h3>
                 <a href="courses.php">2 kursus <i class="bx bx-right-arrow-alt"></i></a>
             </div>
             <div class="box">
-                <img src="/jadipintar/image/accounting.png">
+                <img src="/jadipintar/image/tax.png">
                 <h3>finance & accounting</h3>
                 <a href="courses.php">2 kursus <i class="bx bx-right-arrow-alt"></i></a>
             </div>
@@ -94,22 +94,22 @@
     <!----------ikon section------------- -->
     <div class="icon-section">
         <div class="box">
-            <img src="image/palette.png">
+            <img src="image/speed.png">
             <h3>performa cepat</h3>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur facere necessitatibus fugiat qui accusantium ipsam vel quaerat perspiciatis modi dolore! Voluptatem quaerat praesentium, tempore labore tempora ad aut repellendus cumque?</p>
         </div>
         <div class="box">
-            <img src="image/palette.png">
+            <img src="image/app-development.png">
             <h3>performa cepat</h3>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur facere necessitatibus fugiat qui accusantium ipsam vel quaerat perspiciatis modi dolore! Voluptatem quaerat praesentium, tempore labore tempora ad aut repellendus cumque?</p>
         </div>
         <div class="box">
-            <img src="image/palette.png">
+            <img src="image/customer-service-agent.png">
             <h3>performa cepat</h3>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur facere necessitatibus fugiat qui accusantium ipsam vel quaerat perspiciatis modi dolore! Voluptatem quaerat praesentium, tempore labore tempora ad aut repellendus cumque?</p>
         </div>
         <div class="box">
-            <img src="image/palette.png">
+            <img src="image/positive.png">
             <h3>performa cepat</h3>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur facere necessitatibus fugiat qui accusantium ipsam vel quaerat perspiciatis modi dolore! Voluptatem quaerat praesentium, tempore labore tempora ad aut repellendus cumque?</p>
         </div>
@@ -162,7 +162,7 @@
 
     <!----------benefit section------------- -->
     <div class="benifites">
-        <img src="image/maps.jpeg">
+        <img src="image/map-indonesia.png" class="map">
         <div class="detail">
             <h1>Terpercaya berdasarkan <br> ribuan pelanggan </h1>
             <p>Kerja Cerdas</p>
@@ -170,25 +170,74 @@
             <p>APASIH KEUNTUNGAN DARI JADI PINTAR?</p>
             <div class="box-container">
                 <div class="box">
-                    <img src="image/graphic.png">
+                    <img src="image/time.png">
                     <p>Gratis Perbarui <br> Seumur Hidup</p>
                 </div>
                 <div class="box">
-                    <img src="image/graphic.png">
+                    <img src="image/support.png">
                     <p>Garansi Selama <br> 6 bulan</p>
                 </div>
                 <div class="box">
-                    <img src="image/graphic.png">
+                    <img src="image/speed.png">
                     <p>Kecepatan <br>Performa</p>
                 </div>
                 <div class="box">
-                    <img src="image/graphic.png">
+                    <img src="image/diamond.png">
                     <p>Kami Menyediakan <br> Kursus Premium</p>
                 </div>
             </div>
         </div>
     </div>
 
+    <!----------learner section------------- -->
+    <div class="learners">
+        <div class="heading">
+            <span>kenapa harus kami</span>
+            <h1>membangun komunitas <br> belajar berkelanjutan </h1>
+        </div>
+        <div class="box-container">
+            <div class="box">
+                <div class="shape"></div>
+                <div class="round">
+                    <img src="image/graduating-student.png">
+                </div>
+                    <div class="box-counter" data-speed="200">
+                        <p class="counter" data-target= "200">0</p>
+                        <i class="bx bx-plus"></i> </div>
+                    <p>peserta didik saat ini</p>
+            </div>
+            <div class="box">
+                <div class="shape"></div>
+                <div class="round">
+                    <img src="image/laptop.png">
+                </div>
+                    <div class="box-counter" data-speed="100">
+                        <p class="counter" data-target= "100">0</p>
+                        <i class="bx bx-plus"></i> </div>
+                    <p>kursus & video</p>
+            </div>
+            <div class="box">
+                <div class="shape"></div>
+                <div class="round">
+                    <img src="image/certificate.png">
+                </div>
+                    <div class="box-counter" data-speed="250">
+                        <p class="counter" data-target= "250">0</p>
+                        <i class="bx bx-plus"></i> </div>
+                    <p>peserta didik tersertifikasi</p>
+            </div>
+            <div class="box">
+                <div class="shape"></div>
+                <div class="round">
+                    <img src="image/graduation-cap.png">
+                </div>
+                    <div class="box-counter" data-speed="300">
+                        <p class="counter" data-target= "300">0</p>
+                        <i class="bx bx-plus"></i> </div>
+                    <p>terdaftar sebagai peserta didik</p>
+            </div>
+        </div>
+    </div>
 
 
 
