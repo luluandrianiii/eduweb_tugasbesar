@@ -377,19 +377,6 @@
         </div>
     </div>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
     <?php include 'components/footer.php'?>
     <script src="js/user_script.js" defer></script>
 </body>
