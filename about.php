@@ -79,12 +79,101 @@
                         <h3>tutor yang berpengalaman</h3>
                         <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iusto quae veritatis error debitis magni in reiciendis, alias, nihil ut vitae fugit ipsum. Quae saepe repellat veniam ad! Totam, natus harum.</p>
                     </div>
-                </div><a href="" class="btn">ketahui lebih banyak tentang kami</a>
+                </div>
+                <a href="" class="btn">ketahui lebih banyak tentang kami</a>
             </div>
         </div>
     </div>
+    <!-- -------------------work section--------------------------- -->
+     <div class="work">
+        <div class="box-container">
+            <div class="content">
+                <div class="heading">
+                    <span>gimana sih cara kerja jadi pintar?</span>
+                    <h1>bangun karirmu dan tingkatkan hidupmu</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam esse quas necessitatibus voluptas dignissimos magnam hic porro tempore repellat velit, repellendus pariatur laboriosam reiciendis earum expedita iste quos dolor id!</p>
+                    <a href="" class="btn">ketahui lebih banyak tentang kami</a>
+                </div>
+            </div>
+            <div class="img-box">
+                <img src="image/online-education.png" >
+            </div>
+        </div>
+     </div>
+     <!-- ----------------testimoni section-------------------- -->
+      <div class="testimonial-container">
+            <div class="heading">
+                <span>umpan balik dari peserta didik</span>
+                <h1>apa yang orang-orang katakan tentang kita</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur, mollitia eius. Incidunt recusandae necessitatibus possimus nulla ipsum voluptatum maxime ratione accusantium, neque placeat porro iure odit ad fugit ducimus ipsa?</p>
+            </div>
+            <div class="container">
+                <div class="testimonial-item active">
+                    <i class="bx bxs-quote-right" id="quote"></i>
+                    <img src="image/nattawin.jpg">
+                    <h1>Apo Nattawin</h1>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nemo animi aspernatur cupiditate consequuntur dignissimos incidunt possimus ipsam eveniet nihil quidem reprehenderit voluptas tempora maiores quisquam vero, ducimus repellendus error placeat!</p>
+                </div>
+                <div class="testimonial-item">
+                    <i class="bx bxs-quote-right" id="quote"></i>
+                    <img src="image/kanawut.jpg">
+                    <h1>Gulf Kanawut</h1>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nemo animi aspernatur cupiditate consequuntur dignissimos incidunt possimus ipsam eveniet nihil quidem reprehenderit voluptas tempora maiores quisquam vero, ducimus repellendus error placeat!</p>
+                </div>
+                <div class="testimonial-item">
+                    <i class="bx bxs-quote-right" id="quote"></i>
+                    <img src="image/jj.jpg">
+                    <h1>JJ</h1>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nemo animi aspernatur cupiditate consequuntur dignissimos incidunt possimus ipsam eveniet nihil quidem reprehenderit voluptas tempora maiores quisquam vero, ducimus repellendus error placeat!</p>
+                </div>
+                <div class="testimonial-item">
+                    <i class="bx bxs-quote-right" id="quote"></i>
+                    <img src="image/nanon.jpg">
+                    <h1>Nanon Korapat</h1>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nemo animi aspernatur cupiditate consequuntur dignissimos incidunt possimus ipsam eveniet nihil quidem reprehenderit voluptas tempora maiores quisquam vero, ducimus repellendus error placeat!</p>
+                </div>
+                <div class="left-arrow" onclick="nextSlide()"><i class="bx bx-left-arrow-alt"></i>
+                </div>
+                <div class="right-arrow" onclick="prevSlide()"><i class="bx bx-right-arrow-alt"></i>
+                </div>
+            </div> 
+      </div>
+
 
     <?php include 'components/footer.php'?>
-    <script src="js/user_script.js" defer></script>
+    <script>
+          let index = 0;
+
+            function getSlides() {
+                return Array.from(document.querySelectorAll('.testimonial-item'));
+            }
+
+            function showSlide(newIndex) {
+                const slides = getSlides();
+                if (newIndex >= slides.length) newIndex = 0;
+                if (newIndex < 0) newIndex = slides.length - 1;
+
+                slides.forEach(slide => slide.classList.remove('active'));
+                slides[newIndex].classList.add('active');
+                index = newIndex;
+            }
+
+            window.nextSlide = function () {
+                showSlide(index + 1);
+            };
+
+            window.prevSlide = function () {
+                showSlide(index - 1);
+            };
+
+            document.addEventListener("DOMContentLoaded", function () {
+                const slides = getSlides();
+                slides.forEach((slide, i) => {
+                if (slide.classList.contains("active")) {
+                    index = i;
+                }
+                });
+            });
+    </script>
 </body>
 </html>
