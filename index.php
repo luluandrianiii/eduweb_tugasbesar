@@ -7,6 +7,7 @@
         $user_id = '';
     }
 
+
     $select_likes = $conn->prepare("SELECT * FROM likes WHERE user_id = ?");
     $select_likes->execute([$user_id]);
     $total_likes = $select_likes->rowCount();
@@ -378,6 +379,6 @@
     </div>
 
     <?php include 'components/footer.php'?>
-    <script src="js/user_script.js" defer></script>
+    <script src="/jadipintar/js/user_script.js" defer></script>
 </body>
 </html>

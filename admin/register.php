@@ -8,7 +8,7 @@
         $email = htmlspecialchars(trim($_POST['email']), ENT_QUOTES, 'UTF-8');
         $pass = $_POST['pass'];
         $cpass = $_POST['cpass'];
-        $hashed_pass = password_hash($pass, PASSWORD_DEFAULT);
+
 
         $image_name = $_FILES['image']['name'];
         $image_tmp = $_FILES['image']['tmp_name'];

@@ -9,7 +9,6 @@
                 ';
         }
     }
-
 ?>
 <header class="header">
     <section class="flex">
@@ -44,12 +43,12 @@
 
                 <div id="flex-btn">
                     <a href="profile.php" class="btn">Lihat Profil</a>
-                    <a href="../components/admin_logout.php" onclick="return confirm('keluar dari website ini ?');" class="btn">keluar</a>
+                    <a href="user_logout.php" onclick="return confirm('keluar dari website ini ?');" class="btn">keluar</a>
                 </div>
                 <?php
                     }else{
                 ?>
-                 <h3>Silahkan masuk atau daftar</h3>
+                 <h3 style="margin-bottom: 1rem;">Silahkan masuk atau daftar</h3>
                  <div id="flex-btn">
                     <a href="login.php" class="btn">masuk</a>
                      <a href="register.php" class="btn">daftar</a>

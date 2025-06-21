@@ -293,18 +293,21 @@ section{
 .header .flex .profile h3{
     font-size: 1.5rem;
     color: var(--black);
-    margin-bottom: 1rem;
+    margin-bottom: 0rem;
     text-transform: capitalize;
 }
 .header .flex .profile .flex-btn{
-    margin-top: 1.5rem;
+    margin-top: 2rem;
+}
+#flex-btn{
+    margin-top: 1rem;
 }
 
 .header .flex .profile span{
     color: var(--light-color);
     font-size: 1.6rem;
     text-transform: capitalize;
-    line-height: 3;
+    padding-bottom:1rem;
 }
 .header .navbar{
     display: flex;
@@ -1057,6 +1060,85 @@ section{
     right: 3rem;
     cursor: pointer;
 }
+/*--------------- form container -------------------*/
+.form-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    min-height: 100vh;
+    padding: 4rem 0;
+}
+.form-container form{
+    box-shadow: var(--box-shadow);
+    border-radius: .5rem;
+    padding: 2rem;
+}
+.form-container .login{
+    width: 50rem;
+}
+.form-container .register{
+    width: 70rem;
+    height: 40rem;
+}
+.form-container .register .box {
+    font-size: 1.5rem;
+}
+.form-container form p{
+    margin: .1rem;
+    padding-top: 1rem;
+    font-size: 1.5rem;
+    color: var(--light-color); 
+}
+.form-container form p span{
+    color: var(--red);
+}
+.form-container .link{
+    text-align: center;
+    padding-bottom: 1rem;
+    font-size: 1.5rem;
+}
+.form-container .link a{
+    color: var(--main-color);
+}
+.form-container .link a:hover{
+    color: var(--black);
+    text-decoration: underline;
+}
+.form-container form .box{
+    width: 100%;
+    border-radius: .5rem;
+    margin: 1rem 0;
+    font-size: 1.8rem;
+    color: var(--black);
+    padding: 0.8rem 0.5rem;
+    background-color: #fff;
+    border: none;
+    box-shadow: var(--box-shadow);
+
+}
+.form-container .btn{
+    width: 100%;
+    font-size: 2rem;
+    background-image: var(--gradient2);
+}
+.form-container .btn:hover{
+    background-image: var(--gradient);
+}
+.form-container .flex{
+    display: flex;
+    gap: 2rem;
+}
+.form-container .flex .col {
+    flex: 1 1 25rem;
+}
+.form-container .flex .col input{
+    font-size: 1.5rem;
+}
+.form-container .flex .col p{
+    font-size: 1.5rem;
+}
+
 
 
 

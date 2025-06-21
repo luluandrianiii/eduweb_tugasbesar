@@ -74,39 +74,4 @@ tabsContainer.addEventListener('click', function(e) {
   activeContent?.classList.remove('active');
   targetContent?.classList.add('active');
 });
-//  -----------------testimoni-------------------------
-// Pastikan deklarasi ini global, bukan dalam IIFE atau DOMContentLoaded
-let index = 0;
 
-function getSlides() {
-  return Array.from(document.querySelectorAll('.testimonial-item'));
-}
-
-function showSlide(newIndex) {
-  const slides = getSlides();
-  if (newIndex >= slides.length) newIndex = 0;
-  if (newIndex < 0) newIndex = slides.length - 1;
-
-  slides.forEach(slide => slide.classList.remove('active'));
-  slides[newIndex].classList.add('active');
-  index = newIndex;
-}
-
-// Deklarasi fungsi secara global agar bisa dipanggil dari HTML
-window.nextSlide = function () {
-  showSlide(index + 1);
-};
-
-window.prevSlide = function () {
-  showSlide(index - 1);
-};
-
-// Atur index awal sesuai slide aktif
-document.addEventListener("DOMContentLoaded", () => {
-  const slides = getSlides();
-  slides.forEach((slide, i) => {
-    if (slide.classList.contains("active")) {
-      index = i;
-    }
-  });
-});
