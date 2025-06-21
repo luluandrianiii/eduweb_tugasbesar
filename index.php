@@ -263,18 +263,18 @@
         </div>
         <div class="box-container">
             <div class="teacher-tabs">
-                <img src="image/logo.jpg" class="tab-item active" data-target="#team-01">
-                <img src="image/logo.jpg" class="tab-item active" data-target="#team-02">
-                <img src="image/logo.jpg" class="tab-item active" data-target="#team-03">
-                <img src="image/logo.jpg" class="tab-item active" data-target="#team-04">
-                <img src="image/logo.jpg" class="tab-item active" data-target="#team-05">
-                <img src="image/logo.jpg" class="tab-item active" data-target="#team-06">
+                <img src="image/sandhika.jpg" class="tab-item active" data-target="#team-01">
+                <img src="image/Alex.jpg" class="tab-item" data-target="#team-02">
+                <img src="image/Maudy-Ayunda.jpg" class="tab-item" data-target="#team-03">
+                <img src="image/Felicia Putri Tjiasaka.jpeg" class="tab-item" data-target="#team-04">
+                <img src="image/agusleo.jpeg" class="tab-item" data-target="#team-05">
+                <img src="image/candra.jpg" class="tab-item" data-target="#team-06">
             </div>
             <!----------tab content------------- -->   
             <div class="tab-content active" id="team-01">
-                <img src="image/taylorswift.jpg">
+                <img src="image/sandhika.jpg">
                 <div class="detail">
-                    <h2>Sandika Galih</h2>
+                    <h2>Sandhika Galih</h2>
                     <span>Developer Tutor</span>
                     <p> <i class="bx bx-location-plus"></i> Jakarta, Indonesia </p>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas, saepe molestiae tempore veniam possimus sunt cupiditate vel accusamus dicta ab repellat sapiente quae! Deserunt temporibus, nesciunt ullam quibusdam corporis dicta!</p>
@@ -289,11 +289,11 @@
                 </div>
             </div>
             <div class="tab-content" id="team-02">
-                <img src="image/taylorswift.jpg">
+                <img src="image/Alex.jpg">
                 <div class="detail">
-                    <h2>Sandika Galih</h2>
-                    <span>Developer Tutor</span>
-                    <p> <i class="bx bx-location-plus"></i> Jakarta, Indonesia </p>
+                    <h2>Alex Freberg</h2>
+                    <span>Data Analyst</span>
+                    <p> <i class="bx bx-location-plus"></i> USA </p>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas, saepe molestiae tempore veniam possimus sunt cupiditate vel accusamus dicta ab repellat sapiente quae! Deserunt temporibus, nesciunt ullam quibusdam corporis dicta!</p>
                     <div class="icons">
                         <i class="bx bxl-instagram"></i>
@@ -306,10 +306,10 @@
                 </div>
             </div>
             <div class="tab-content" id="team-03">
-                <img src="image/taylorswift.jpg">
+                <img src="image/Maudy-Ayunda.jpg">
                 <div class="detail">
-                    <h2>Sandika Galih</h2>
-                    <span>Developer Tutor</span>
+                    <h2>Maudy Ayunda</h2>
+                    <span>Artis</span>
                     <p> <i class="bx bx-location-plus"></i> Jakarta, Indonesia </p>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas, saepe molestiae tempore veniam possimus sunt cupiditate vel accusamus dicta ab repellat sapiente quae! Deserunt temporibus, nesciunt ullam quibusdam corporis dicta!</p>
                     <div class="icons">
@@ -323,11 +323,11 @@
                 </div>
             </div>
             <div class="tab-content" id="team-04">
-                <img src="image/taylorswift.jpg">
+                <img src="image/Felicia Putri Tjiasaka.jpeg">
                 <div class="detail">
-                    <h2>Sandika Galih</h2>
-                    <span>Developer Tutor</span>
-                    <p> <i class="bx bx-location-plus"></i> Jakarta, Indonesia </p>
+                    <h2>Felicia Putri Tjiasaka</h2>
+                    <span>Financial Consultant</span>
+                    <p> <i class="bx bx-location-plus"></i> Surabaya, Indonesia </p>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas, saepe molestiae tempore veniam possimus sunt cupiditate vel accusamus dicta ab repellat sapiente quae! Deserunt temporibus, nesciunt ullam quibusdam corporis dicta!</p>
                     <div class="icons">
                         <i class="bx bxl-instagram"></i>
@@ -340,11 +340,11 @@
                 </div>
             </div>
             <div class="tab-content" id="team-05">
-                <img src="image/taylorswift.jpg">
+                <img src="image/agusleo.jpeg">
                 <div class="detail">
-                    <h2>Sandika Galih</h2>
-                    <span>Developer Tutor</span>
-                    <p> <i class="bx bx-location-plus"></i> Jakarta, Indonesia </p>
+                    <h2>Agusleo Halim</h2>
+                    <span>Digital Marketing</span>
+                    <p> <i class="bx bx-location-plus"></i> Surabaya, Indonesia </p>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas, saepe molestiae tempore veniam possimus sunt cupiditate vel accusamus dicta ab repellat sapiente quae! Deserunt temporibus, nesciunt ullam quibusdam corporis dicta!</p>
                     <div class="icons">
                         <i class="bx bxl-instagram"></i>
@@ -357,10 +357,10 @@
                 </div>
             </div>
             <div class="tab-content" id="team-06">
-                <img src="image/taylorswift.jpg">
+                <img src="image/candra.jpg">
                 <div class="detail">
-                    <h2>Sandika Galih</h2>
-                    <span>Developer Tutor</span>
+                    <h2>Candra</h2>
+                    <span>Designer</span>
                     <p> <i class="bx bx-location-plus"></i> Jakarta, Indonesia </p>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas, saepe molestiae tempore veniam possimus sunt cupiditate vel accusamus dicta ab repellat sapiente quae! Deserunt temporibus, nesciunt ullam quibusdam corporis dicta!</p>
                     <div class="icons">

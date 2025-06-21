@@ -691,9 +691,11 @@ section{
 /* --------------------teacher section------------------------ */
 
 .teacher-section{
-    padding: 1% 5%;
-    padding-top: 5rem;
+    position: relative;
+    min-height: 40rem;
+    padding: 4rem 4rem;
 }
+
 .teacher-section h1{
     text-transform: capitalize;
     padding-top: 2rem;
@@ -736,16 +738,26 @@ section{
     padding: 2rem;
     border-radius: 20px;
     box-shadow: var(--box-shadow);
-    display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 2rem;
     width: 60rem;
     min-height: 40rem;
     overflow: hidden;
+    align-items: center;
+}
+.tab-item {
+  width: 100px;
+  height: auto;
+  cursor: pointer;
+  margin: 10px;
+  border: 2px solid transparent;
+  border-radius: 10px;
+  transition: 0.3s;
 }
 .tab-content.active{
     visibility: visible;
     display: grid;
+    z-index: 1;
 }
 .tab-content img{
     width: 100%;
@@ -763,7 +775,6 @@ section{
     font-size: 1.6rem;
     color: #444;
     height: 100%;
-    overflow-y: auto; /* scroll jika isi melebihi tinggi*/
     padding-right: 0.5rem;
 }
 .tab-content .detail h2{

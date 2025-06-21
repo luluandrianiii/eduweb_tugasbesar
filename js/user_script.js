@@ -54,15 +54,25 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 });
 // -----------------tab---------------------------//
+
 const tabsContainer = document.querySelector('.teacher-tabs');
 const aboutSection = document.querySelector('.teacher-section');
-tabsContainer.addEventListener('click', (e) =>{
-  if (e.target.classList.contains('tab-item') && !e.target.classList.contains('active')) {
-      tabsContainer.querySelector('active').classList.remove('active');
-      e.target.classList.add('active');
 
-      const target = e.target.getAttribute('data-target');
-      aboutSection.querySelector('.tab-content.active').classList.remove('active');
-      aboutSection.querySelector(target).classList.add('active');
-  }
-})
+tabsContainer.addEventListener('click', function(e) {
+  const clicked = e.target.closest('.tab-item');
+  if (!clicked) return;
+
+  // Ganti tab yang aktif
+  const currentActiveTab = tabsContainer.querySelector('.tab-item.active');
+  currentActiveTab?.classList.remove('active');
+  clicked.classList.add('active');
+
+  // Ganti konten yang aktif
+  const targetId = clicked.getAttribute('data-target');
+  const activeContent = aboutSection.querySelector('.tab-content.active');
+  const targetContent = aboutSection.querySelector(targetId);
+
+  activeContent?.classList.remove('active');
+  targetContent?.classList.add('active');
+});
+
