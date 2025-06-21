@@ -238,6 +238,144 @@
             </div>
         </div>
     </div>
+    <!----------about us section------------- -->
+    <div class="about-us">
+        <div class="box-container">
+            <div class="box">
+                <img src="image/taylorswift.png">
+            </div>
+            <div class="box">
+                <div class="heading">
+                    <span>MEMBERIKAN FITUR TERBAIK</span>
+                    <h1>semua yang kamu butuhkan menuju sukses</h1>
+                    <P>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nemo quas magni ullam nihil suscipit sit, debitis eius recusandae, exercitationem quos iure quis doloremque tenetur sequi omnis dignissimos, veritatis non eum.</P>
+                    <a href="about.php" class="btn">ketahui lebih banyak tentang kami</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!----------tutor section------------- -->   
+    <div class="teacher-section">
+        <div class="heading">
+            <span>Tutor</span>
+            <h1>yang akan menginsprirasimu</h1>
+        </div>
+        <div class="box-container">
+            <div class="teacher-tabs">
+                <img src="image/logo.jpg" class="tab-item active" data-target="#team-01">
+                <img src="image/logo.jpg" class="tab-item active" data-target="#team-02">
+                <img src="image/logo.jpg" class="tab-item active" data-target="#team-03">
+                <img src="image/logo.jpg" class="tab-item active" data-target="#team-04">
+                <img src="image/logo.jpg" class="tab-item active" data-target="#team-05">
+                <img src="image/logo.jpg" class="tab-item active" data-target="#team-06">
+            </div>
+            <!----------tab content------------- -->   
+            <div class="tab-content active" id="team-01">
+                <img src="image/taylorswift.jpg">
+                <div class="detail">
+                    <h2>Sandika Galih</h2>
+                    <span>Developer Tutor</span>
+                    <p> <i class="bx bx-location-plus"></i> Jakarta, Indonesia </p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas, saepe molestiae tempore veniam possimus sunt cupiditate vel accusamus dicta ab repellat sapiente quae! Deserunt temporibus, nesciunt ullam quibusdam corporis dicta!</p>
+                    <div class="icons">
+                        <i class="bx bxl-instagram"></i>
+                        <i class="bx bxl-twitter"></i>
+                        <i class="bx bxl-facebook"></i>
+                        <i class="bx bxl-linkedin"></i>
+                    </div>
+                    <a href=""><i class="bx bxl-phone"></i>+62 897-2346-7859</a>
+                    <a href=""><i class="bx bxl-envelope"></i>example@gmail.com</a>
+                </div>
+            </div>
+            <div class="tab-content" id="team-02">
+                <img src="image/taylorswift.jpg">
+                <div class="detail">
+                    <h2>Sandika Galih</h2>
+                    <span>Developer Tutor</span>
+                    <p> <i class="bx bx-location-plus"></i> Jakarta, Indonesia </p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas, saepe molestiae tempore veniam possimus sunt cupiditate vel accusamus dicta ab repellat sapiente quae! Deserunt temporibus, nesciunt ullam quibusdam corporis dicta!</p>
+                    <div class="icons">
+                        <i class="bx bxl-instagram"></i>
+                        <i class="bx bxl-twitter"></i>
+                        <i class="bx bxl-facebook"></i>
+                        <i class="bx bxl-linkedin"></i>
+                    </div>
+                    <a href=""><i class="bx bxl-phone"></i>+62 897-2346-7859</a>
+                    <a href=""><i class="bx bxl-envelope"></i>example@gmail.com</a>
+                </div>
+            </div>
+            <div class="tab-content" id="team-03">
+                <img src="image/taylorswift.jpg">
+                <div class="detail">
+                    <h2>Sandika Galih</h2>
+                    <span>Developer Tutor</span>
+                    <p> <i class="bx bx-location-plus"></i> Jakarta, Indonesia </p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas, saepe molestiae tempore veniam possimus sunt cupiditate vel accusamus dicta ab repellat sapiente quae! Deserunt temporibus, nesciunt ullam quibusdam corporis dicta!</p>
+                    <div class="icons">
+                        <i class="bx bxl-instagram"></i>
+                        <i class="bx bxl-twitter"></i>
+                        <i class="bx bxl-facebook"></i>
+                        <i class="bx bxl-linkedin"></i>
+                    </div>
+                    <a href=""><i class="bx bxl-phone"></i>+62 897-2346-7859</a>
+                    <a href=""><i class="bx bxl-envelope"></i>example@gmail.com</a>
+                </div>
+            </div>
+            <div class="tab-content" id="team-04">
+                <img src="image/taylorswift.jpg">
+                <div class="detail">
+                    <h2>Sandika Galih</h2>
+                    <span>Developer Tutor</span>
+                    <p> <i class="bx bx-location-plus"></i> Jakarta, Indonesia </p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas, saepe molestiae tempore veniam possimus sunt cupiditate vel accusamus dicta ab repellat sapiente quae! Deserunt temporibus, nesciunt ullam quibusdam corporis dicta!</p>
+                    <div class="icons">
+                        <i class="bx bxl-instagram"></i>
+                        <i class="bx bxl-twitter"></i>
+                        <i class="bx bxl-facebook"></i>
+                        <i class="bx bxl-linkedin"></i>
+                    </div>
+                    <a href=""><i class="bx bxl-phone"></i>+62 897-2346-7859</a>
+                    <a href=""><i class="bx bxl-envelope"></i>example@gmail.com</a>
+                </div>
+            </div>
+            <div class="tab-content" id="team-05">
+                <img src="image/taylorswift.jpg">
+                <div class="detail">
+                    <h2>Sandika Galih</h2>
+                    <span>Developer Tutor</span>
+                    <p> <i class="bx bx-location-plus"></i> Jakarta, Indonesia </p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas, saepe molestiae tempore veniam possimus sunt cupiditate vel accusamus dicta ab repellat sapiente quae! Deserunt temporibus, nesciunt ullam quibusdam corporis dicta!</p>
+                    <div class="icons">
+                        <i class="bx bxl-instagram"></i>
+                        <i class="bx bxl-twitter"></i>
+                        <i class="bx bxl-facebook"></i>
+                        <i class="bx bxl-linkedin"></i>
+                    </div>
+                    <a href=""><i class="bx bxl-phone"></i>+62 897-2346-7859</a>
+                    <a href=""><i class="bx bxl-envelope"></i>example@gmail.com</a>
+                </div>
+            </div>
+            <div class="tab-content" id="team-06">
+                <img src="image/taylorswift.jpg">
+                <div class="detail">
+                    <h2>Sandika Galih</h2>
+                    <span>Developer Tutor</span>
+                    <p> <i class="bx bx-location-plus"></i> Jakarta, Indonesia </p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas, saepe molestiae tempore veniam possimus sunt cupiditate vel accusamus dicta ab repellat sapiente quae! Deserunt temporibus, nesciunt ullam quibusdam corporis dicta!</p>
+                    <div class="icons">
+                        <i class="bx bxl-instagram"></i>
+                        <i class="bx bxl-twitter"></i>
+                        <i class="bx bxl-facebook"></i>
+                        <i class="bx bxl-linkedin"></i>
+                    </div>
+                    <a href=""><i class="bx bxl-phone"></i>+62 897-2346-7859</a>
+                    <a href=""><i class="bx bxl-envelope"></i>example@gmail.com</a>
+                </div>
+            </div>
+            <!----------tab content------------- -->   
+        </div>
+    </div>
 
 
 

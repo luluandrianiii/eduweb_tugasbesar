@@ -640,17 +640,180 @@ section{
     font-size: 3rem;
 }
 
+.about-us{
+    background-image: linear-gradient(270deg, #9654ba 0%, #4460ff 100%);
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    padding: 6% 10%;
+    position: relative;
+}
+.about-us .box-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(40rem, 1fr));
+    gap:2rem;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: #fff;
+}
+.about-us .box-container span{
+    background-color: #ffffff21;
+    color: #fff;
+}
+.about-us .box-container h1{
+    text-transform: capitalize;
+    padding-bottom: 2rem;
+    padding-top: 2rem;
+}
+.about-us .box-container img{
+    width: 100%;
+    animation: bounce 5s ease-in-out infinite;
+}
+.about-us .box-container p{
+    font-size: 1.4rem;
+    color: #ccc;
+    margin-bottom:2rem;
+    line-height: 1.5;
+    text-align: justify;
+   padding-bottom: 1rem;
+}
+@keyframes bounce{
+    0%,
+    100%{
+        transform: translateY(-50px);
+    }
+    50%{
+        transform: translateY(50px);
+    }
+}
 
+/* --------------------teacher section------------------------ */
 
+.teacher-section{
+    padding: 1% 5%;
+    padding-top: 5rem;
+}
+.teacher-section h1{
+    text-transform: capitalize;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+.box-container{
+    display: grid;
+    grid-template-columns: 1.2fr 1.8fr; /* kiri 2 bagian, kanan 3 */
+    gap: 2rem;
+    align-items: flex-start;
+}
+.teacher-section .teacher-tabs{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+}
+.teacher-section .teacher-tabs img{
+    width: 100%;
+    height: auto;
+    aspect-ratio: 3/4; /* biar proporsional */
+    object-fit: cover;
+}
+.teacher-section .teacher-tabs .tab-item{
+    width: 100%;
+    border-radius: 10px;
+    padding: 0.5rem;
+    background-color: #fff;
+    box-shadow: var(--box-shadow);
+    cursor: pointer;
+    transition: 0.3s;
+}
+.teacher-section .teacher-tabs .tab-item.active{
+    outline: 2px solid #6c63ff;
+    opacity: 0.8;
+}
+.tab-content{
+    display: none;
+    visibility: hidden;
+    background-color: #fff;
+    padding: 2rem;
+    border-radius: 20px;
+    box-shadow: var(--box-shadow);
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+    width: 60rem;
+    min-height: 40rem;
+    overflow: hidden;
+}
+.tab-content.active{
+    visibility: visible;
+    display: grid;
+}
+.tab-content img{
+    width: 100%;
+    height: auto;
+    aspect-ratio: 3 / 4;
+    object-fit: cover;
+    border-radius: 10px;
+    display: block;
+}
+.tab-content .detail{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 0.8rem;
+    font-size: 1.6rem;
+    color: #444;
+    height: 100%;
+    overflow-y: auto; /* scroll jika isi melebihi tinggi*/
+    padding-right: 0.5rem;
+}
+.tab-content .detail h2{
+    text-transform: capitalize;
+    margin-bottom: 1.8rem;
+    font-weight: bold;
+}
+.tab-content .detail span{
+    background-color: var(--primary-opacity);
+    border-radius: 10px;
+    padding: 1rem;
+    color: var(--color-primary);
+    text-transform: capitalize;
+    text-align: center;
+    font-size: 1.8rem;
+    width: 20rem;
+}
+.tab-content .detail p{
+    margin-top: 1.2rem;
+    color: #666;
+    line-height: 1;
+}
+.tab-content .detail .icons i{
+    background-color: var(--primary-opacity);
+    color: var(--color-primary);
+    border-radius: 50%;
+    padding: 1rem;
+    font-size: 2rem;
+    margin: 0 .3rem;
+    margin-bottom: .5rem;
+    transition: .5s;
+}
+.tab-content .detail .icons i:hover{
+    background-color: #b966e7ee;
+    color: #fff;
+}
+.tab-content .detail a{
+    display: grid;
+    margin-top: .5rem;
+}
+.tab-content .detail a i{
+    margin-right: .5rem;
 
-
+}
 
 
 
 
 
 /* -------footer------ */
-/* footer */
 .newsletter{
     background-repeat: no-repeat;
     background-color: #2f57ef;
