@@ -104,7 +104,7 @@
             </div>
             <div class="details">
                 <h3 class="title"><?= $fetch_playlist['title']; ?></h3>
-                <div class="date"><i class="bx bxs-calendar-alt"></i><span><?= $fetch_playlist['date']; ?></span></div>
+                <div class="date"><i class="bx bxs-calendar-alt"></i><span><?= date('d-m-Y', strtotime($fetch_playlist['date'])); ?></span></div>
                 <div class="descriptions">
                     <?= $fetch_playlist['descriptions']; ?>
                 </div>
@@ -140,7 +140,7 @@
                     <div><i class="bx bx-dots-vertical-rounded" style="<?php if($fetch_videos['status'] == 'active'){echo 'color:limegreen';}else{echo 'color:red';}?>">
                         <span style="<?php if($fetch_videos['status']=='active'){ echo 'color:limegreen';}else{echo 'color:red';}?>"><?= $fetch_videos['status']; ?></span>
                     </i></div>
-                    <div> <i class="bx bxs-calendar-alt"></i><span><?= $fetch_videos['date']; ?></span> </div>
+                    <div> <i class="bx bxs-calendar-alt"></i><span><?= date('d-m-Y', strtotime($fetch_videos['date'])); ?></span> </div>
                 </div>
                 <img src="../uploaded_files/<?= $fetch_videos['thumb'];?>" class="thumb">
                 <h3 class="title"><?= $fetch_videos['title']; ?></h3>

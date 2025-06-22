@@ -107,7 +107,7 @@
         <div class="container">
             <video src="../uploaded_files/<?= $fetch_content['video']; ?>" autoplay controls poster="../uploaded_files/<?= $fetch_content['thumb']; ?>" class="video"></video>
             <div class="date">
-            <i class="bx bxs-calendar-alt"><span><?= $fetch_content['date']; ?></span></i>
+            <i class="bx bxs-calendar-alt"><span><?= date('d-m-Y', strtotime($fetch_content['date'])); ?></span></i>
         </div>
         <h3 class="title"><?= $fetch_content['title']; ?></h3>
         <div class="flex">
@@ -156,7 +156,7 @@
                         <img src="../uploaded_files/<?= $fetch_commentor['image'];?>" alt="">
                         <div>
                             <h3><?= $fetch_commentor['name'];?></h3>
-                            <span><?= $fetch_comment['date'];?></span>
+                            <span><?= date('d-m-Y', strtotime($fetch_comment['date'])); ?></span>
                         </div>
                     </div>
                     <p class="text"><?= $fetch_comment['comment'];?></p>

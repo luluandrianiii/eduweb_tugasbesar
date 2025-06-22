@@ -60,7 +60,7 @@
                     <img src="uploaded_files/<?= $fetch_tutor['image']; ?>">
                     <div>
                         <h3><?= $fetch_tutor['name']; ?></h3>
-                        <span><?= $fetch_courses['date']; ?></span>
+                        <span><?= date('d-m-Y', strtotime($fetch_courses['date'])); ?></span>
                     </div>
                 </div>
                 <img src="uploaded_files/<?= $fetch_courses['thumb']; ?>" class="thumb">

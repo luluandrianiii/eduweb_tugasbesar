@@ -80,7 +80,7 @@
 
                     <div> 
                         <i class="bx bx-calender"></i>
-                        <span><?= $fetch_playlist['date']; ?></span>
+                        <span><?= date('d-m-Y', strtotime($fetch_playlist['date'])); ?></span>
                     </div>
                 </div>
                     <div class="thumb">

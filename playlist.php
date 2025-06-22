@@ -125,7 +125,7 @@
                     <h3><?= $fetch_playlist['title']; ?></h3>
                     <p><?= $fetch_playlist['descriptions']; ?></p>
                     <div class="date">
-                        <i class="bx bxs-calendar-alt"> <span><?= $fetch_playlist['date']; ?></span> </i>
+                        <i class="bx bxs-calendar-alt"> <span><?= date('d-m-Y', strtotime($fetch_playlist['date'])); ?></span> </i>
                     </div>
                 </div>
             </div>
@@ -150,7 +150,7 @@
                         $video_id = $fetch_content['id'];
                 
                 ?>
-                <a href="watch_video?get_id=<?= $fetch_content['id']; ?>" class="box">
+                <a href="watch_video.php?get_id=<?= $fetch_content['id']; ?>" class="box">
                     <i class="bx bx-play"></i>
                     <img src="uploaded_files/<?= $fetch_content['thumb']; ?>" alt="">
                     <h3><?= $fetch_content['title']; ?></h3>

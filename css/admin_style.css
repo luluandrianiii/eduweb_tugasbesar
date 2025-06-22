@@ -1064,7 +1064,7 @@ footer .bottom a{
 .comments .show-comments .contents a:hover{
     text-decoration: underline;
 }
-.comments .show-comments.text{
+.comments .show-comments .text{
     border-radius: .5rem;
     background-color: var(--light-bg);
     padding: 1rem 1.5rem;
