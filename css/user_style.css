@@ -1493,11 +1493,139 @@ section{
 .edit_comment form .flex{
     width: 50%;
 }
-
-
-
-
-
+/* ------------tutor------------- */
+.teachers{
+    padding: 6%;
+}
+.teachers .search-tutor{
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 1rem;
+    margin-bottom: 3rem;
+    align-items: center;
+    display: flex;
+    padding: 1rem 2rem;
+    gap: 1.5rem;
+    background-color: var(--primary-opacity);
+    border-radius: .5rem;
+}
+.teachers .search-tutor input{
+    width: 100%;
+    font-size: 1.5rem;
+    color: var(--black);
+    background: none;
+}
+.teachers .search-tutor button{
+    font-size: 2rem;
+    color: var(--black);
+    background: none;
+    cursor: pointer;
+}
+.teachers .search-tutor button:hover{
+    color: var(--main-color);
+}
+.teachers .box-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 35rem);
+    gap: 1.5rem;
+    align-items: center;
+    justify-content: center;
+}
+.teachers .box-container .box{
+    border-radius: .5rem;
+    padding: 2rem;
+    background-color: #fff;
+    text-transform: capitalize;
+    box-shadow: var(--box-shadow);
+}
+.teachers .box-container .box .tutor{
+    margin-bottom: 1rem;
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+}
+.teachers .box-container .box .tutor img{
+    width: 5rem;
+    height: 5rem;
+    object-fit: cover;
+    border-radius: 50%;
+}
+.teachers .box-container .box .tutor h3{
+    color: var(--black);
+    font-size: 1.8rem;
+    margin-bottom: .2rem;
+}
+.teachers .box-container .box .tutor span{
+    color: var(--main-color);
+    font-size: 1.5rem;
+}
+.teachers .box-container .box p{
+    padding-top: 1rem;
+    font-size: 1.5rem;
+    color: var(--light-color);
+}
+.teachers .box-container .box span{
+    color: var(--main-color);
+}
+.teachers .box-container .box .btn{
+    margin-top: 1rem;
+}
+.teachers .box-container .box .offer{
+    text-align: center;
+}
+.teachers .box-container .box .offer h3{
+    font-size: 2rem;
+    color: var(--black);
+}
+.teachers .box-container .box .offer p{
+    line-height: 2;
+    padding-bottom: .5rem;
+}
+.tutor-profile{
+    padding: 6%;
+    text-transform: capitalize;
+}
+.tutor-profile .details{
+    background-origin: var(white);
+    border-radius: .5rem;
+    padding: 2rem;
+    text-align: center;
+    box-shadow: var(--box-shadow);
+}
+.tutor-profile .details .tutor{
+    margin-top: 2rem;
+}
+.tutor-profile .details .tutor img{
+    width: 10rem;
+    height: 10rem;
+    border-radius: 50%;
+    margin-bottom: .5rem;
+    padding: .6rem;
+    background-image: var(--gradient2);
+}
+.tutor-profile .details .tutor h3{
+    font-size: 2rem;
+    margin: .5rem;
+    text-transform: capitalize;
+}
+.tutor-profile .details .tutor span{
+    font-size: 1.5rem;
+    color: var(--light-color);
+}
+.tutor-profile .details .flex{
+    display: flex;
+    gap: 1.5rem;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.tutor-profile .details .flex p{
+    border-radius: .5rem;
+    flex: 1 1 25rem;
+    background-color: var(--primary-opacity);
+    padding: 1rem 3rem;
+    font-size: 1.5rem;
+    color: var(--color-primary);
+}
 
 
 

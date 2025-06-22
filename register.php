@@ -11,7 +11,7 @@
         $id = uniqid();
         $name = htmlspecialchars(trim($_POST['name']), ENT_QUOTES, 'UTF-8');
 
-       $email = strtolower(trim($_POST['email']));
+        $email = strtolower(trim($_POST['email']));
 
         $pass = $_POST['pass'];
         $cpass = $_POST['cpass'];
@@ -69,7 +69,7 @@
     <div class="banner">
         <div class="detail">
             <div class="title">
-                <a href="indec.php">beranda</a><span><i class="bx bx-chevron-right">daftar sekarang</i></span>
+                <a href="index.php">beranda</a><span><i class="bx bx-chevron-right">daftar sekarang</i></span>
             </div>
             <h1>daftar sekarang</h1>
             <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aut molestias eum eligendi commodi modi temporibus quibusdam vel esse harum, quidem dolorum ea cupiditate deleniti fuga, doloremque sit? Vitae, ipsam maxime.</p>

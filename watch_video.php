@@ -133,7 +133,7 @@
     <div class="banner">
         <div class="detail">
             <div class="title">
-                <a href="indec.php">beranda</a><span><i class="bx bx-chevron-right">tonton video</i></span>
+                <a href="index.php">beranda</a><span><i class="bx bx-chevron-right">tonton video</i></span>
             </div>
             <h1>tonton video</h1>
             <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aut molestias eum eligendi commodi modi temporibus quibusdam vel esse harum, quidem dolorum ea cupiditate deleniti fuga, doloremque sit? Vitae, ipsam maxime.</p>

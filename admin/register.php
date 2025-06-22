@@ -76,10 +76,10 @@
                     <input type="text" name="name" placeholder="masukkan nama Anda" maxlength="50" required class="box">
                     <p>profesi <span>*</span></p>
                     <select name="profession" required class="box">
-                        <option value="" disabled selected>--select your profession--</option>
+                        <option value="" disabled selected>--pilih profesimu--</option>
                         <option value="developer">developer</option>
                         <option value="designer">designer</option>
-                        <option value="musician">musician</option>
+                        <option value="musician">analyst</option>
                         <option value="biologist">biologist</option>
                         <option value="teacher">teacher</option>
                         <option value="engineer">engineer</option>

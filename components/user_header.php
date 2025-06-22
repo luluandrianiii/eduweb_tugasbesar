@@ -15,7 +15,7 @@
         <a href="home.php"> 
             <img src="image/logo.jpg" width="130px"> </a>
         <nav class="navbar">
-            <a href="home.php"><span>Beranda</span></a>
+            <a href="index.php"><span>Beranda</span></a>
             <a href="about.php"><span>Tentang Kami</span></a>
             <a href="courses.php"><span>Kursus</span></a>
             <a href="teachers.php"><span>Tutor</span></a>
