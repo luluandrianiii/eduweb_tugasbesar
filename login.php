@@ -24,10 +24,6 @@
         $message[] = 'Email atau password salah';
     }
 }
-
-
-
-
 ?>
 
 <!DOCTYPE html>

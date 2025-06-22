@@ -1138,11 +1138,165 @@ section{
 .form-container .flex .col p{
     font-size: 1.5rem;
 }
+/* ---------------------playlist---------------------- */
 
+.playlist{
+    padding: 4%;
+}
+.playlist .row{
+    align-items: center;
+    display: flex;
+    gap: 2.5rem;
+    flex-wrap: wrap;
+    padding: 2rem;
+    background-color: #fff;
+    box-shadow: var(--box-shadow);
+}
+.playlist .row .col{
+    flex: 1 1 40rem;
+}
+.playlist .row .col .save-list button{
+    font-size: 1.5rem;
+    border-radius: .5rem;
+    background-color: var(--primary-opacity);
+    padding: 1.2rem 2.5rem;
+    cursor: pointer;
+    color: var(--color-primary);
+    margin-bottom: 2rem;
+}
+.playlist .row .col .save-list button i{
+    color: var(--color-primary);
+    margin-right: 1rem;
+}
+.playlist .row .col .save-list button span{
+    color: var(--color-primary);
+}
+.playlist .row .col .save-list button:hover{
+    background-image: var(--gradient2);
+    color: #fff;
+}
+.playlist .row .col .save-list button:hover i{
+    color: #fff;
+}
+.playlist .row .col .save-list button:hover span{
+    color: var(--white);
+}
+.playlist .row .col .thumb{
+    position: relative;
+    height: 30rem;
+}
+.playlist .row .col .thumb span{
+    position: absolute;
+    top: 1rem;
+    left: 1rem;
+    font-size: 2rem;
+    color: var(--white);
+    background-color: rgba(0, 0, 0 ,0.3);
+    padding: .5rem 1.5rem;
+    border-radius: 10px;
+}
+.playlist .row .col .thumb img{
+    width: 100%;
+    height: 100%;
+    border-radius: .5rem;
+    object-fit: cover;
+}
+.playlist .row .col .tutor{
+    display: flex;
+    align-items: center;
+    gap: 1.7rem;
+}
+.playlist .row .col .tutor img{
+    width: 7rem;
+    height: 7rem;
+    border-radius: .5rem;
+    object-fit: cover;
+}
+.playlist .row .col .tutor h3{
+    font-size: 1.5rem;
+    color: var(--black);
+    margin-bottom: .2rem;
+    text-transform: capitalize;
+}
+.playlist .row .col .tutor span{
+    color: var(--color-secondary);
+    font-size: 1.4rem;
+}
+.playlist .row .col .detail{
+    padding-top: 1rem;
+}
+.playlist .row .col .detail h3{
+    font-size: 1.8rem;
+    color: var(--color-secondary);
+    text-align: center;
+    text-transform: capitalize;
+}
+.playlist .row .col .detail p{
+    padding: 1rem 0;
+    line-height: 1.5;
+    color: var(--light-color);
+    font-size: 1.4rem;
+}
+.playlist .row .col .detail .date{
+    font-size: 1.7rem;
+    padding-top: .5rem;
+}
+.playlist .row .col .detail .date i{
+    color: var(--main-color);
+    margin-right: 1rem;
+}
+.playlist .row .col .detail span{
+    color: var(--light-color);
+}
 
-
-
-
+.video-container{
+    padding: 4% 6%;
+}
+.video-container .heading h1{
+    text-transform: capitalize;
+}
+.video-container .box-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(35rem, 1fr));
+}
+.video-container .box-container .box{
+    position: relative;
+    border-radius: .5rem;
+    padding: 2rem;
+    background-color: #fff;
+    margin: 1rem;
+}
+.video-container .box-container .box img{
+    height: 20rem;
+    width: 100%;
+    border-radius: .5rem;
+    object-fit: cover;
+}
+.video-container .box-container .box i{
+    position: absolute;
+    top: 2rem;
+    left: 2rem;
+    right: 2rem;
+    height: 20rem;
+    background-color: rgba(0, 0, 0 ,0.3);
+    align-items: center;
+    justify-content: center;
+    font-size: 3rem;
+    color: #fff;
+    border-radius: .5rem;
+    display: none;
+}
+.video-container .box-container .box:hover i{
+    display: flex;
+}
+.video-container .box-container .box h3{
+    font-size: 2rem;
+    color: var(--black);
+    margin-top: 1rem;
+}
+.video-container .box-container .box:hover h3{
+    color: var(--color-pink);
+}
 
 
 
