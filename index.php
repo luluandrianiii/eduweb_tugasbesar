@@ -38,7 +38,7 @@
     <div class="hero">
         <div class="box-container">
             <div class="box">
-                <img src="/jadipintar/image/banner.png">
+                <img src="image/banner.png">
             </div>
             <div class="box">
                 <h1>Bangun skill untuk tingkatkan karirmu</h1>
@@ -56,37 +56,37 @@
         </div>
         <div class="box-container">
             <div class="box">
-                <img src="/jadipintar/image/graphic.png">
+                <img src="image/graphic.png">
                 <h3>graphic design</h3>
                 <a href="courses.php">5 kursus <i class="bx bx-right-arrow-alt"></i></a>
             </div>
             <div class="box">
-                <img src="/jadipintar/image/feature-selection.png">
+                <img src="image/feature-selection.png">
                 <h3>web design</h3>
                 <a href="courses.php">5 kursus <i class="bx bx-right-arrow-alt"></i></a>
             </div>
             <div class="box">
-                <img src="/jadipintar/image/seo.png">
+                <img src="image/seo.png">
                 <h3>sales marketing</h3>
                 <a href="courses.php">5 kursus <i class="bx bx-right-arrow-alt"></i></a>
             </div>
             <div class="box">
-                <img src="/jadipintar/image/app-development2.png">
+                <img src="image/app-development2.png">
                 <h3>mobile aplication</h3>
                 <a href="courses.php">5 kursus <i class="bx bx-right-arrow-alt"></i></a>
             </div>
             <div class="box">
-                <img src="/jadipintar/image/cognitive.png">
+                <img src="image/cognitive.png">
                 <h3>personal development</h3>
                 <a href="courses.php">3 kursus <i class="bx bx-right-arrow-alt"></i></a>
             </div>
             <div class="box">
-                <img src="/jadipintar/image/writing.png">
+                <img src="image/writing.png">
                 <h3>art & humanities</h3>
                 <a href="courses.php">2 kursus <i class="bx bx-right-arrow-alt"></i></a>
             </div>
             <div class="box">
-                <img src="/jadipintar/image/tax.png">
+                <img src="image/tax.png">
                 <h3>finance & accounting</h3>
                 <a href="courses.php">2 kursus <i class="bx bx-right-arrow-alt"></i></a>
             </div>
@@ -379,6 +379,6 @@
     </div>
 
     <?php include 'components/footer.php'?>
-    <script src="/jadipintar/js/user_script.js" defer></script>
+    <script src="js/user_script.js" defer></script>
 </body>
 </html>
