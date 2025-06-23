@@ -109,7 +109,7 @@
                     <?php } ?>
                 </form>
                 <div class="thumb">
-                    <span><?= $total_videos; ?></span>
+                    <span><?= $total_videos; ?> video</span>
                     <img src="uploaded_files/<?= $fetch_playlist['thumb']; ?>">
                 </div>
             </div>
@@ -152,7 +152,7 @@
                 ?>
                 <a href="watch_video.php?get_id=<?= $fetch_content['id']; ?>" class="box">
                     <i class="bx bx-play"></i>
-                    <img src="uploaded_files/<?= $fetch_content['thumb']; ?>" alt="">
+                    <img src="uploaded_files/<?= $fetch_content['thumb']; ?>">
                     <h3><?= $fetch_content['title']; ?></h3>
                 </a>
 

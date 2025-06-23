@@ -1626,10 +1626,127 @@ section{
     font-size: 1.5rem;
     color: var(--color-primary);
 }
-
-
-
-
+/* -------------profile pengguna----------------- */
+.profile{
+    padding: 5% 8%;
+}
+.profile .details{
+    background-color: #fff;
+    border-radius: .5rem;
+    padding: 2rem;
+    box-shadow: var(--box-shadow);
+    text-transform: capitalize;
+}
+.profile .details .user{
+    text-align: center;
+    margin-bottom: 2rem;
+}
+.profile .details .user img{
+    width: 10rem;
+    height: 10rem;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: .5rem;
+    background-image: var(--gradient);
+}
+.profile .details .user h3{
+    font-size: 2rem;
+    margin: .5rem 0;
+}
+.profile .details .user p{
+    font-size: 1.7rem;
+    color: var(--light-color);
+    margin-bottom: 2rem;
+}
+.profile .details .box-container{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-end;
+    gap: 1.5rem;
+}
+.profile .details .box-container .box{
+    background-color: var(--primary-opacity);
+    border-radius: .5rem;
+    padding: 1.5rem 2rem;
+    flex: 1 1 30rem;
+}
+.profile .details .box-container .box .flex{
+    display: flex;
+    align-items: center;
+    gap: 1.7rem;
+    margin-bottom: 1rem;
+}
+.profile .details .box-container .box .flex i{
+    height: 3rem;
+    width: 3rem;
+    border-radius: .5rem;
+    background-image: var(--gradient2);
+    line-height: 3.4rem;
+    font-size: 1.3rem;
+    color: var(--white);
+    text-align: center;
+}
+.profile .details .box-container .box .flex h3{
+    font-size: 1.5rem;
+    color: var(--main-color);
+    margin-bottom: .2rem;
+}
+.profile .details .box-container .box .flex span{
+    font-size: 1.5rem;
+    color: var(--light-color);
+}
+/* ---------------disukai---------------- */
+.liked-videos{
+    padding: 6%;
+}
+.liked-videos .box-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 35rem);
+    gap: 1.5rem;
+    align-items: center;
+    justify-content: center;
+    text-overflow: hidden;
+}
+.liked-videos .box-container .box{
+    background-color: #fff;
+    border-radius: .5rem;
+    padding: 2rem;
+    overflow-x: hidden;
+}
+.liked-videos .box-container .box .tutor{
+    margin-bottom: 2rem;
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+}
+.liked-videos .box-container .box .tutor img{
+    width: 5rem;
+    height: 5rem;
+    border-radius: 50%;
+    object-fit: cover;
+}
+.liked-videos .box-container .box .tutor h3{
+    font-size: 1.8rem;
+    color: var(--black);
+    margin-bottom: .2rem;
+}
+.liked-videos .box-container .box .tutor span{
+    font-size: 1.5rem;
+    color: var(--light-color);
+}
+.liked-videos .box-container .box .thumb{
+    width: 100%;
+    height: 20rem;
+    object-fit: cover;
+    border-radius: .5rem;
+    margin-bottom: 1rem;
+}
+.liked-videos .box-container .box .title{
+    font-style: 2rem;
+    padding: .5rem 0;
+    text-overflow: ellipsis;
+    overflow-x: hidden;
+}
 
 
 
@@ -1781,7 +1898,34 @@ footer .bottom a{
 
 
 
-/* ----------------footer------------------ */
+/* ----------------media scren----------------- */
+@media (max-witdh:1200px){
+    .banner{
+        height: auto;
+    }
+    .banner img{
+        width: 90%;
+    }
+    .about{
+        padding: 6%;
+    }
+    .about .box{
+        padding: 1rem;
+    }
+    .about .thumbnail-1{
+        display: none;
+    }
+    .about .thumbnail-2{
+        display: none;
+    }
+    .about .thumbnail-3{
+        display: none;
+    }
+    .about .box-container .box .img{
+        display: block;
+    }
+
+}
 @media (max-width:768px){
     #search-btn{
         display: inline-block;
@@ -1853,5 +1997,49 @@ footer .bottom a{
     }
     .newsletter .input-field input {
         width: 80%;
+    }
+    .hero .navbar a:hover{
+        color: var(--black);
+    }
+    .hero::after{
+        display: none;
+    }
+    .hero .box-container .box:nth-child(2){
+        padding: 2rem;
+    }
+    .form-container .flex{
+        display: flex;
+        gap: 0;
+        flex-flow: column;
+    }
+    .watch-video .video-details .video{
+        height: 30rem;
+    }
+}
+@media (max-witdh: 450px){
+    html{
+        font-size: 50%;
+    }
+    .heading{
+        font-size: 2rem;
+    }
+    .flex-btn{
+        flex-flow: column;
+        gap: 0;
+    }
+    .playlist .row .col .thumb{
+        height: 20rem;
+    }
+    .courses .box-container{
+        grid-template-columns: 1fr;
+    }
+    .video-container .box-container{
+        grid-template-columns: 1fr;
+    }
+    .teachers .box-container{
+        grid-template-columns: 1fr;
+    }
+    .watch-video .video-details .video{
+        height: auto;
     }
 }
