@@ -27,14 +27,14 @@
             <div class="title">
                 <a href="index.php">beranda</a><span><i class="bx bx-chevron-right">kursus</i></span>
             </div>
-            <h1>Menyediakan berbagai macam kursus</h1>
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aut molestias eum eligendi commodi modi temporibus quibusdam vel esse harum, quidem dolorum ea cupiditate deleniti fuga, doloremque sit? Vitae, ipsam maxime.</p>
+            <h1>Temukan Kursus yang Tepat untuk Kembangkan Potensimu</h1>
+            <p>JadiPintar menyediakan berbagai macam kursus berkualitas di berbagai bidang, mulai dari teknologi, bisnis, desain, hingga pengembangan diri. Belajar lebih fleksibel dan terarah bersama tutor profesional, kapan saja dan di mana saja.</p>
             <div class="flex-btn">
                 <a href="login.php" class="btn">masuk untuk mulai</a>
                 <a href="contact.php" class="btn">hubungi kami</a>
             </div>
         </div>
-        <img src="image/taylorswift.png">
+        <img src="image/banner.png">
     </div>
 
     <!----------krusus section------------- -->

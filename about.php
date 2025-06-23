@@ -29,13 +29,13 @@
                 <a href="index.php">beranda</a><span><i class="bx bx-chevron-right">tentang</i></span>
             </div>
             <h1>Ketahui lebih banyak tentang Jadi Pintar</h1>
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aut molestias eum eligendi commodi modi temporibus quibusdam vel esse harum, quidem dolorum ea cupiditate deleniti fuga, doloremque sit? Vitae, ipsam maxime.</p>
+            <p>JadiPintar adalah platform pembelajaran online yang menyediakan berbagai kursus berkualitas tinggi dari tutor-tutor terbaik. Kami hadir untuk mendukung semua orang dalam mengembangkan diri, membangun keterampilan, dan mencapai kesuksesan melalui akses belajar yang mudah, fleksibel, dan menyenangkan.</p>
             <div class="flex-btn">
                 <a href="login.php" class="btn">masuk untuk mulai</a>
                 <a href="contact.php" class="btn">hubungi kami</a>
             </div>
         </div>
-        <img src="image/taylorswift.png">
+        <img src="image/banner.png">
     </div>
     <!----------about section------------- -->
     <div class="about">
@@ -56,28 +56,28 @@
                 <div class="title">
                     <span>ketahui tentang kami</span>
                     <h1>ketahui tentang platform jadi pintar</h1>
-                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Veritatis dignissimos pariatur itaque rem? Expedita, nesciunt commodi, debitis alias obcaecati unde animi corrupti assumenda minus ex cumque, illo fuga eos sed!</p>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia cumque animi, facilis mollitia quam atque expedita. Magnam repudiandae, nisi aliquam, at impedit recusandae sint quasi consectetur officiis fugiat deleniti perferendis.</p>
+                    <p>JadiPintar dibangun dengan semangat untuk memberikan akses pendidikan yang setara bagi siapa saja, di mana saja. Kami percaya bahwa setiap individu memiliki potensi besar yang dapat diasah melalui pembelajaran berkelanjutan, didampingi oleh tutor berpengalaman dan materi yang relevan dengan perkembangan zaman.</p>
+                    <p>Dengan menggabungkan teknologi digital, pengalaman belajar yang interaktif, serta fitur-fitur inovatif, JadiPintar menjadi solusi terbaik bagi pelajar, mahasiswa, maupun profesional yang ingin meningkatkan kompetensi dan mencapai tujuan karier mereka.</p>
                 </div>
                 <div class="detail">
                     <i class="bx bxl-facebook"></i>
                     <div>
                         <h3>kelas fleksibel</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iusto quae veritatis error debitis magni in reiciendis, alias, nihil ut vitae fugit ipsum. Quae saepe repellat veniam ad! Totam, natus harum.</p>
+                        <p>Belajar bisa disesuaikan dengan waktumu. Kami menyediakan kelas yang dapat diakses kapan saja, sehingga kamu dapat belajar sesuai ritmemu sendiri, tanpa tekanan.</p>
                     </div>
                 </div>
                 <div class="detail">
                     <i class="bx bxl-facebook"></i>
                     <div>
                         <h3>belajar dari mana aja</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iusto quae veritatis error debitis magni in reiciendis, alias, nihil ut vitae fugit ipsum. Quae saepe repellat veniam ad! Totam, natus harum.</p>
+                        <p>Cukup dengan perangkat dan koneksi internet, kamu bisa mengakses berbagai kursus menarik dari rumah, kampus, atau bahkan saat bepergian.</p>
                     </div>
                 </div>
                 <div class="detail">
                     <i class="bx bxl-facebook"></i>
                     <div>
                         <h3>tutor yang berpengalaman</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iusto quae veritatis error debitis magni in reiciendis, alias, nihil ut vitae fugit ipsum. Quae saepe repellat veniam ad! Totam, natus harum.</p>
+                        <p>Setiap tutor di JadiPintar telah terverifikasi dan berpengalaman di bidangnya. Mereka siap membimbingmu hingga paham dengan metode belajar yang ramah dan interaktif.</p>
                     </div>
                 </div>
                 <a href="" class="btn">ketahui lebih banyak tentang kami</a>
@@ -91,7 +91,7 @@
                 <div class="heading">
                     <span>gimana sih cara kerja jadi pintar?</span>
                     <h1>bangun karirmu dan tingkatkan hidupmu</h1>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam esse quas necessitatibus voluptas dignissimos magnam hic porro tempore repellat velit, repellendus pariatur laboriosam reiciendis earum expedita iste quos dolor id!</p>
+                    <p>Mulai dari mendaftar, memilih kursus sesuai minat, hingga menyelesaikan modul dan mendapatkan sertifikat—semuanya bisa kamu lakukan secara online dengan cepat dan mudah di JadiPintar. Kami memastikan setiap proses belajar kamu berjalan efisien, efektif, dan tentunya menyenangkan.</p>
                     <a href="" class="btn">ketahui lebih banyak tentang kami</a>
                 </div>
             </div>
@@ -105,32 +105,32 @@
             <div class="heading">
                 <span>umpan balik dari peserta didik</span>
                 <h1>apa yang orang-orang katakan tentang kita</h1>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur, mollitia eius. Incidunt recusandae necessitatibus possimus nulla ipsum voluptatum maxime ratione accusantium, neque placeat porro iure odit ad fugit ducimus ipsa?</p>
+                <p>Kami percaya bahwa pengalaman belajar terbaik datang dari kepercayaan pengguna. Inilah beberapa pendapat dari mereka yang telah mengikuti kursus dan berkembang bersama JadiPintar.</p>
             </div>
             <div class="container">
                 <div class="testimonial-item active">
                     <i class="bx bxs-quote-right" id="quote"></i>
                     <img src="image/nattawin.jpg">
                     <h1>Apo Nattawin</h1>
-                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nemo animi aspernatur cupiditate consequuntur dignissimos incidunt possimus ipsam eveniet nihil quidem reprehenderit voluptas tempora maiores quisquam vero, ducimus repellendus error placeat!</p>
+                    <p>“Awalnya saya ragu belajar online, tapi JadiPintar punya sistem yang mudah diikuti dan tutor-tutornya sangat komunikatif. Dalam beberapa minggu saja, saya sudah punya skill baru yang langsung saya pakai untuk kerja!”</p>
                 </div>
                 <div class="testimonial-item">
                     <i class="bx bxs-quote-right" id="quote"></i>
                     <img src="image/kanawut.jpg">
                     <h1>Gulf Kanawut</h1>
-                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nemo animi aspernatur cupiditate consequuntur dignissimos incidunt possimus ipsam eveniet nihil quidem reprehenderit voluptas tempora maiores quisquam vero, ducimus repellendus error placeat!</p>
+                    <p>“Kelasnya fleksibel dan bisa diakses kapan pun. Ini cocok banget buat saya yang punya jadwal sibuk. Materi kursus juga sangat up-to-date dan aplikatif!”</p>
                 </div>
                 <div class="testimonial-item">
                     <i class="bx bxs-quote-right" id="quote"></i>
                     <img src="image/jj.jpg">
                     <h1>JJ</h1>
-                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nemo animi aspernatur cupiditate consequuntur dignissimos incidunt possimus ipsam eveniet nihil quidem reprehenderit voluptas tempora maiores quisquam vero, ducimus repellendus error placeat!</p>
+                    <p>“Saya sudah mencoba beberapa platform belajar, tapi menurut saya JadiPintar adalah yang paling nyaman. Fitur-fiturnya lengkap, tutor sangat ramah, dan komunitasnya suportif!”</p>
                 </div>
                 <div class="testimonial-item">
                     <i class="bx bxs-quote-right" id="quote"></i>
                     <img src="image/nanon.jpg">
                     <h1>Nanon Korapat</h1>
-                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nemo animi aspernatur cupiditate consequuntur dignissimos incidunt possimus ipsam eveniet nihil quidem reprehenderit voluptas tempora maiores quisquam vero, ducimus repellendus error placeat!</p>
+                    <p>“Yang saya suka dari JadiPintar adalah pendekatan belajarnya yang interaktif. Visualnya menarik dan penjelasan materi benar-benar bikin paham. Cocok buat pemula maupun lanjutan.”</p>
                 </div>
                 <div class="left-arrow" onclick="nextSlide()"><i class="bx bx-left-arrow-alt"></i>
                 </div>

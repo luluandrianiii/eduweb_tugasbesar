@@ -35,7 +35,7 @@
                 <a href="contact.php" class="btn">hubungi kami</a>
             </div>
         </div>
-        <img src="image/taylorswift.png">
+        <img src="image/banner.png">
     </div>
 
     <!----------tutor section------------- -->

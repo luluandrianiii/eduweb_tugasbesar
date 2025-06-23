@@ -42,7 +42,7 @@
 <footer>
     <div class="content">
         <div class="box">
-            <img src="/jadipintar/image/logo.jpg">
+            <img src="/jadipintar/image/logo.png">
             <a href="contact.php" class="btn">Kontak Kami</a>
         </div>
         <div class="box">

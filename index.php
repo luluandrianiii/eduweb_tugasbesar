@@ -38,12 +38,12 @@
     <div class="hero">
         <div class="box-container">
             <div class="box">
-                <img src="/jadipintar/image/taylorswift.png">
+                <img src="/jadipintar/image/banner.png">
             </div>
             <div class="box">
                 <h1>Bangun skill untuk tingkatkan karirmu</h1>
                 <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi sequi fugiat accusantium reprehenderit facere fugit ipsa atque quos voluptatem quas adipisci, minima enim explicabo illo! Reiciendis illo distinctio inventore rem?</p>
+                    Kembangkan dirimu melalui berbagai kursus berkualitas. JadiPintar hadir untuk membantumu belajar dengan mudah, fleksibel, dan menyenangkan kapan pun dan di mana pun.</p>
                 <a href="courses.php" class="btn">Lihat Konten</a>
             </div>
         </div>
@@ -97,22 +97,22 @@
         <div class="box">
             <img src="image/speed.png">
             <h3>performa cepat</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur facere necessitatibus fugiat qui accusantium ipsam vel quaerat perspiciatis modi dolore! Voluptatem quaerat praesentium, tempore labore tempora ad aut repellendus cumque?</p>
+            <p>Sistem kami dirancang untuk memberikan akses belajar yang cepat dan lancar tanpa hambatan.</p>
         </div>
         <div class="box">
             <img src="image/app-development.png">
-            <h3>performa cepat</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur facere necessitatibus fugiat qui accusantium ipsam vel quaerat perspiciatis modi dolore! Voluptatem quaerat praesentium, tempore labore tempora ad aut repellendus cumque?</p>
+            <h3>desain interaktif</h3>
+            <p>Materi kursus dibuat dengan tampilan menarik dan mudah dipahami untuk semua kalangan.</p>
         </div>
         <div class="box">
             <img src="image/customer-service-agent.png">
-            <h3>performa cepat</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur facere necessitatibus fugiat qui accusantium ipsam vel quaerat perspiciatis modi dolore! Voluptatem quaerat praesentium, tempore labore tempora ad aut repellendus cumque?</p>
+            <h3>pengajar profesional</h3>
+            <p>Dipandu oleh tutor berpengalaman yang siap membimbingmu hingga mahir.</p>
         </div>
         <div class="box">
             <img src="image/positive.png">
-            <h3>performa cepat</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur facere necessitatibus fugiat qui accusantium ipsam vel quaerat perspiciatis modi dolore! Voluptatem quaerat praesentium, tempore labore tempora ad aut repellendus cumque?</p>
+            <h3>mudah digunakan</h3>
+            <p>Antarmuka yang sederhana memudahkan siapa saja untuk mulai belajar tanpa ribet.</p>
         </div>
     </div>
 
@@ -243,13 +243,13 @@
     <div class="about-us">
         <div class="box-container">
             <div class="box">
-                <img src="image/taylorswift.png">
+                <img src="image/banner2.png">
             </div>
             <div class="box">
                 <div class="heading">
                     <span>MEMBERIKAN FITUR TERBAIK</span>
                     <h1>semua yang kamu butuhkan menuju sukses</h1>
-                    <P>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nemo quas magni ullam nihil suscipit sit, debitis eius recusandae, exercitationem quos iure quis doloremque tenetur sequi omnis dignissimos, veritatis non eum.</P>
+                    <P>JadiPintar adalah platform pembelajaran online yang menyediakan berbagai kursus dan materi edukatif. Kami percaya bahwa pendidikan harus mudah diakses oleh siapa saja untuk membuka lebih banyak peluang di masa depan.</P>
                     <a href="about.php" class="btn">ketahui lebih banyak tentang kami</a>
                 </div>
             </div>
@@ -278,7 +278,7 @@
                     <h2>Sandhika Galih</h2>
                     <span>Developer Tutor</span>
                     <p> <i class="bx bx-location-plus"></i> Jakarta, Indonesia </p>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas, saepe molestiae tempore veniam possimus sunt cupiditate vel accusamus dicta ab repellat sapiente quae! Deserunt temporibus, nesciunt ullam quibusdam corporis dicta!</p>
+                    <p>Seorang dosen dan praktisi pengembangan web dengan pengalaman lebih dari 10 tahun. Sandhika dikenal dengan gaya mengajarnya yang santai dan mudah dipahami, serta aktif membagikan ilmu pemrograman melalui berbagai platform edukatif.</p>
                     <div class="icons">
                         <i class="bx bxl-instagram"></i>
                         <i class="bx bxl-twitter"></i>
@@ -295,7 +295,7 @@
                     <h2>Alex Freberg</h2>
                     <span>Data Analyst</span>
                     <p> <i class="bx bx-location-plus"></i> USA </p>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas, saepe molestiae tempore veniam possimus sunt cupiditate vel accusamus dicta ab repellat sapiente quae! Deserunt temporibus, nesciunt ullam quibusdam corporis dicta!</p>
+                    <p>Alex adalah analis data profesional dari Amerika Serikat yang dikenal lewat kanal edukasinya di YouTube. Ia mengajarkan data science, Python, dan visualisasi data dengan pendekatan praktis yang cocok untuk pemula hingga menengah.</p>
                     <div class="icons">
                         <i class="bx bxl-instagram"></i>
                         <i class="bx bxl-twitter"></i>
@@ -312,7 +312,7 @@
                     <h2>Maudy Ayunda</h2>
                     <span>Artis</span>
                     <p> <i class="bx bx-location-plus"></i> Jakarta, Indonesia </p>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas, saepe molestiae tempore veniam possimus sunt cupiditate vel accusamus dicta ab repellat sapiente quae! Deserunt temporibus, nesciunt ullam quibusdam corporis dicta!</p>
+                    <p>Maudy bukan hanya seorang artis multitalenta, tetapi juga lulusan Oxford dan Stanford. Ia menginspirasi generasi muda untuk terus belajar, berpikir kritis, dan berani mengejar impian melalui pendidikan berkualitas.</p>
                     <div class="icons">
                         <i class="bx bxl-instagram"></i>
                         <i class="bx bxl-twitter"></i>
@@ -329,7 +329,7 @@
                     <h2>Felicia Putri Tjiasaka</h2>
                     <span>Financial Consultant</span>
                     <p> <i class="bx bx-location-plus"></i> Surabaya, Indonesia </p>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas, saepe molestiae tempore veniam possimus sunt cupiditate vel accusamus dicta ab repellat sapiente quae! Deserunt temporibus, nesciunt ullam quibusdam corporis dicta!</p>
+                    <p>Sebagai pendiri Ternak Uang dan konsultan keuangan muda, Felicia memberikan pemahaman finansial dengan cara yang sederhana namun berdampak. Ia fokus membantu generasi muda memahami pentingnya literasi keuangan sejak dini.</p>
                     <div class="icons">
                         <i class="bx bxl-instagram"></i>
                         <i class="bx bxl-twitter"></i>
@@ -346,7 +346,7 @@
                     <h2>Agusleo Halim</h2>
                     <span>Digital Marketing</span>
                     <p> <i class="bx bx-location-plus"></i> Surabaya, Indonesia </p>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas, saepe molestiae tempore veniam possimus sunt cupiditate vel accusamus dicta ab repellat sapiente quae! Deserunt temporibus, nesciunt ullam quibusdam corporis dicta!</p>
+                    <p>Digital marketer profesional yang berpengalaman dalam membangun strategi pemasaran untuk brand lokal dan global. Agusleo membagikan ilmunya agar kamu dapat bersaing di era digital dengan tools dan strategi kekinian.</p>
                     <div class="icons">
                         <i class="bx bxl-instagram"></i>
                         <i class="bx bxl-twitter"></i>
@@ -363,7 +363,7 @@
                     <h2>Candra</h2>
                     <span>Designer</span>
                     <p> <i class="bx bx-location-plus"></i> Jakarta, Indonesia </p>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas, saepe molestiae tempore veniam possimus sunt cupiditate vel accusamus dicta ab repellat sapiente quae! Deserunt temporibus, nesciunt ullam quibusdam corporis dicta!</p>
+                    <p>Desainer kreatif yang ahli dalam UI/UX dan branding visual. Candra telah bekerja di berbagai proyek kreatif dan siap membimbing kamu menguasai desain digital dengan tools modern dan pendekatan yang inspiratif.</p>
                     <div class="icons">
                         <i class="bx bxl-instagram"></i>
                         <i class="bx bxl-twitter"></i>

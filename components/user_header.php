@@ -13,7 +13,7 @@
 <header class="header">
     <section class="flex">
         <a href="home.php"> 
-            <img src="image/logo.jpg" width="130px"> </a>
+            <img src="image/logo.png" width="130px"> </a>
         <nav class="navbar">
             <a href="index.php"><span>Beranda</span></a>
             <a href="about.php"><span>Tentang Kami</span></a>
